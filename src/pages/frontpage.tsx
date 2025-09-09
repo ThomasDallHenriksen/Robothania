@@ -27,21 +27,21 @@ const Frontpage: React.FC = () => {
             <Link to="/medtech" className="nav-card medtech-card">
               <div className="nav-card-content">
                 <h2>MEDTECH</h2>
-                <img src="/medtech.png" alt="Medtech" />
+                <img src="/medtechGreenTint.png" alt="Medtech" />
               </div>
             </Link>
             
             <Link to="/industrial" className="nav-card industrial-card">
               <div className="nav-card-content">
                 <h2>INDUSTRIAL</h2>
-                <img src="/industry.png" alt="Industrial" />
+                <img src="/industrialGreenTint.png" alt="Industrial" />
               </div>
             </Link>
             
             <Link to="/defence" className="nav-card defence-card">
               <div className="nav-card-content">
                 <h2>DEFENCE</h2>
-                <img src="/defence.png" alt="Defence" />
+                <img src="/defence_green_brighter.png" alt="Defence" />
               </div>
             </Link>
           </div>
