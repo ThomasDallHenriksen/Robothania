@@ -1,0 +1,32 @@
+name: Deploy to Raspberry Pi (Self-Hosted)
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch: {}
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    # Match the labels you set during ./config.sh (you can just use "self-hosted" too)
+    runs-on: [self-hosted, linux]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install & Build
+        run: |
+          npm ci
+          npm run build
+          test -d dist || (echo "dist/ not found after build" && exit 1)
+
+      - name: Deploy to local Nginx root
+        run: |
+          rsync -av --delete dist/ /var/www/mysite/
