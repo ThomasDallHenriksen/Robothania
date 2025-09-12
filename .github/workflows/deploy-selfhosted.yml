@@ -12,7 +12,7 @@ concurrency:
 jobs:
   deploy:
     # Match the labels you set during ./config.sh (you can just use "self-hosted" too)
-    runs-on: [self-hosted, linux]
+    runs-on: [self-hosted, linux, ARM64]
     steps:
       - uses: actions/checkout@v4
 
