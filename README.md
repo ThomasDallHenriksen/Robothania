@@ -20,7 +20,7 @@
 - Nginx: `sudo nginx -t && sudo systemctl reload nginx`  
 - Rettigheder: `sudo chown -R reinvestrobohouse:reinvestrobohouse /var/www/mysite`
 
-### Opsætning af Raspberry Pi med Nginx + Github Action
+## Opsætning af Raspberry Pi med Nginx + Github Action
 For opsætning se "Raspberry Pi med Nginx + Github Action" på google drev https://drive.google.com/drive/folders/1r_Ejn01_shNvAayxbvO8eUwUi8NxlYh1
 
 ## React + TypeScript + Vite
