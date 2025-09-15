@@ -18,7 +18,7 @@
 **Raspberry Pi Fejlfinding (kort)**  
 - Runner: `cd ~/actions-runner && sudo ./svc.sh status`  
 - Nginx: `sudo nginx -t && sudo systemctl reload nginx`  
-- Rettigheder: `sudo chown -R <pi_user>:<pi_user> /var/www/mysite`
+- Rettigheder: `sudo chown -R reinvestrobohouse:reinvestrobohouse /var/www/mysite`
 
 ## React + TypeScript + Vite
 
