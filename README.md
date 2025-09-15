@@ -7,63 +7,23 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Deploy (GitHub Actions, self-hosted runner på Raspberry Pi)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+[![Deploy (Self-Hosted)](https://github.com/<ORG>/<REPO>/actions/workflows/deploy-selfhosted.yml/badge.svg)](https://github.com/<ORG>/<REPO>/actions/workflows/deploy-selfhosted.yml)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Trigger:** Kører automatisk ved push til `master`/`main` og kan også startes manuelt via **Actions → Run workflow**.
+- **Runner:** Jobbet kører på vores **self-hosted** GitHub Actions runner på Raspberry Pi (`self-hosted`, `Linux`, `ARM64`).
+- **Hvad der sker:**
+  - Tjekker koden ud.
+  - *(Vælg én variant – afhængigt af repoet):*  
+    - **Statisk HTML/CSS:** Kopierer filerne fra repoet til Nginx-mappen med `rsync` (ekskl. `.git`, `.github`, `README*`).  
+    - **Build-projekt (fx Vite/React):** `npm ci && npm run build`, derefter `rsync` af `dist/` til Nginx-mappen.
+  - Ingen SSH, ingen åbne porte – runneren skriver **lokalt** til serverens filsystem.
+- **Destination:** `/var/www/mysite/` (den mappe Nginx server filer fra).
+- **Resultat:** Når workflowet er grønt, er websitet opdateret.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+**Fejlfinding (kort)**  
+- Runner: `cd ~/actions-runner && sudo ./svc.sh status`  
+- Nginx: `sudo nginx -t && sudo systemctl reload nginx`  
+- Rettigheder: `sudo chown -R <pi_user>:<pi_user> /var/www/mysite`
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
