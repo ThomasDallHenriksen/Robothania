@@ -40,7 +40,7 @@ const Frontpage: React.FC = () => {
             
             <Link to="/defence" className="nav-card defence-card">
               <div className="nav-card-content">
-                <h2>DEFENCE</h2>
+                <h2>DEFENSE</h2>
                 <img src="/defence_green_brighter.png" alt="Defence" />
               </div>
             </Link>
