@@ -9,7 +9,7 @@ Currently, two official plugins are available:
 
 ## Deploy (GitHub Actions, self-hosted runner på Raspberry Pi)
 
-[![Deploy (Self-Hosted)](https://github.com/<ORG>/<REPO>/actions/workflows/deploy-selfhosted.yml/badge.svg)](https://github.com/<ORG>/<REPO>/actions/workflows/deploy-selfhosted.yml)
+[![Deploy to Raspberry Pi (Self-Hosted)](https://github.com/Robothania/robothaniaReactWebsite/actions/workflows/deploy-selfhosted.yml/badge.svg)](https://github.com/Robothania/robothaniaReactWebsite/actions/workflows/deploy-selfhosted.yml)
 
 - **Trigger:** Kører automatisk ved push til `master`/`main` og kan også startes manuelt via **Actions → Run workflow**.
 - **Runner:** Jobbet kører på vores **self-hosted** GitHub Actions runner på Raspberry Pi (`self-hosted`, `Linux`, `ARM64`).
