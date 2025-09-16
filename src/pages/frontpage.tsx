@@ -17,7 +17,7 @@ const Frontpage: React.FC = () => {
             <img src="/logoNodes.png" alt="Nodes" />
           </div>
           <div className="gear-placeholder">
-            <img src="/robothaniaGearTest.svg" alt="Gear" />
+            <img src="/robothaniaGear.svg" alt="Gear" />
           </div>
           
           <div className="title">
