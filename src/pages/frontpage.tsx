@@ -13,9 +13,13 @@ const Frontpage: React.FC = () => {
       <main className="frontpage-main">
         {/* Interactive menu section - placeholder for future implementation */}
         <section className="interactive-menu-section">
-          <div className="gear-placeholder">
-            <img src="/robothaniaGear.png" alt="Gear" />
+          <div className="nodes-placeholder">
+            <img src="/logoNodes.png" alt="Nodes" />
           </div>
+          <div className="gear-placeholder">
+            <img src="/robothaniaGear2.svg" alt="Gear" />
+          </div>
+          
           <div className="title">
             <h1>ROBOTHANIA</h1>
           </div>

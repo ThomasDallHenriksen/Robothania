@@ -32,11 +32,18 @@
   justify-content: center;
   align-items: center;
 }
+.nodes-placeholder img {
+  width: 115px;
+  height: 250px;
+  position: relative;
+  left: 49px;
+  top: -2px;
+}
 
 .gear-placeholder img {
   width: 200px;
   height: 200px;
-  animation: rotateVariable 10s ease-in-out infinite;
+  animation: rotateVariable 15s ease-in-out infinite;
 }
 
 /* Keyframes for rotation animation */
@@ -235,6 +242,14 @@
     height: 150px;
   }
 
+  .nodes-placeholder img {
+    width: 87px;
+    height: 186px;
+    position: relative;
+    left: 37px;
+    top: -1px;
+  }
+
   .title {
     display: flex;
     justify-content: center;
@@ -307,6 +322,14 @@
   .gear-placeholder img {
     width: 120px;
     height: 120px;
+  }
+
+  .nodes-placeholder img {
+    width: 71px;
+    height: 148px;
+    position: relative;
+    left: 30px;
+    top: 0px;
   }
 
   .title {
