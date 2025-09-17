@@ -15,9 +15,9 @@ const Navbar: React.FC = () => {
         
         {/* Navigation items on the right (for future use) */}
         <div className="navbar-menu">
-          {/* You can add navigation items here later */}
-          {/* <Link to="/about" className="nav-link">About</Link>
-          <Link to="/contact" className="nav-link">Contact</Link> */}
+          <Link to="/technology" className="nav-link">Technology</Link>
+          <Link to="/industries" className="nav-link">Industries</Link>
+          <Link to="/about" className="nav-link">About</Link>
         </div>
       </div>
     </nav>
