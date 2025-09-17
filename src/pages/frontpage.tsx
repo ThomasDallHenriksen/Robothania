@@ -42,10 +42,10 @@ const Frontpage: React.FC = () => {
               </div>
             </Link>
             
-            <Link to="/defence" className="nav-card defence-card">
+            <Link to="/defense" className="nav-card defence-card">
               <div className="nav-card-content">
                 <h2>DEFENSE</h2>
-                <img src="/defence_green_brighter.png" alt="Defence" />
+                <img src="/defence_green_brighter.png" alt="Defense" />
               </div>
             </Link>
           </div>
