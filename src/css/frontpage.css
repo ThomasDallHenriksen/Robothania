@@ -45,7 +45,7 @@
 .gear-placeholder img {
   width: 200px;
   height: 200px;
-  animation: rotateVariable 0s ease-in-out infinite;
+  animation: rotateVariable 15s ease-in-out infinite;
 }
 
 /* Keyframes for rotation animation */
