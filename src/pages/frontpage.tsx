@@ -1,9 +1,54 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import '../css/frontpage.css';
 
 const Frontpage: React.FC = () => {
+
+const [currentCard, setCurrentCard] = useState(0);
+
+const cards = [
+  {
+    id: 'medtech',
+    title: 'MEDTECH',
+    image: '/medtechGreenTint.png',
+    link: '/medtech'
+  },
+  {
+    id: 'industrial',
+    title: 'INDUSTRIAL',
+    image: '/industrialGreenTint.png',
+    link: '/industrial'
+  },
+  {
+    id: 'defense',
+    title: 'DEFENSE',
+    image: '/defence_green_brighter.png',
+    link: '/defense'
+  }
+];
+
+// Auto-scroll to the next card every 8 seconds
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentCard((prev) => (prev + 1) % cards.length);
+    }, 8000);
+  
+  return () => clearInterval(timer);
+  }, [cards.length]);
+
+  const goToCard = (index:number) => {
+    setCurrentCard(index);
+  };
+
+  const nextCard = () => {
+    setCurrentCard((prev) => (prev + 1) % cards.length);
+  };
+
+  const prevCard = () => {
+    setCurrentCard((prev) => (prev - 1 + cards.length) % cards.length);
+  };
+
   return (
     <div className="frontpage">
       {/* Navigation bar */}
@@ -25,29 +70,45 @@ const Frontpage: React.FC = () => {
           </div>
         </section>
         
-        {/* Navigation cards */}
-        <section className="navigation-cards-section">
-          <div className="navigation-grid">
-            <Link to="/medtech" className="nav-card medtech-card">
-              <div className="nav-card-content">
-                <h2>MEDTECH</h2>
-                <img src="/medtechGreenTint.png" alt="Medtech" />
+        {/* Carousel section */}
+        <section className="carousel-section">
+          <div className="carousel-container">
+            <div className="carousel-wrapper">
+              <div 
+                className="carousel-track"
+                style={{ transform: `translateX(-${currentCard * 33.33}%)` }}
+              >
+                {cards.map((card) => (
+                  <div key={card.id} className="carousel-slide">
+                    <Link to={card.link} className="carousel-card">
+                      <div className="carousel-card-content">
+                        <h2>{card.title}</h2>
+                        <img src={card.image} alt={card.title} />
+                      </div>
+                    </Link>
+                  </div>
+                ))}
               </div>
-            </Link>
+            </div>
             
-            <Link to="/industrial" className="nav-card industrial-card">
-              <div className="nav-card-content">
-                <h2>INDUSTRIAL</h2>
-                <img src="/industrialGreenTint.png" alt="Industrial" />
-              </div>
-            </Link>
-            
-            <Link to="/defense" className="nav-card defence-card">
-              <div className="nav-card-content">
-                <h2>DEFENSE</h2>
-                <img src="/defence_green_brighter.png" alt="Defense" />
-              </div>
-            </Link>
+            {/* Navigation arrows */}
+            <button className="carousel-arrow carousel-arrow-left" onClick={prevCard}>
+              ‹
+            </button>
+            <button className="carousel-arrow carousel-arrow-right" onClick={nextCard}>
+              ›
+            </button>
+          </div>
+          
+          {/* Dots navigation */}
+          <div className="carousel-dots">
+            {cards.map((_, index) => (
+              <button
+                key={index}
+                className={`carousel-dot ${index === currentCard ? 'active' : ''}`}
+                onClick={() => goToCard(index)}
+              />
+            ))}
           </div>
         </section>
       </main>
