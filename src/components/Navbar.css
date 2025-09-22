@@ -29,10 +29,12 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  background: rgba(8, 8, 8)
+  
 }
 
 .logo-img {
-  height: 50px;
+  height: 65px;
   width: auto;
 }
 
@@ -44,7 +46,8 @@
 
 .nav-link {
   text-decoration: none;
-  color: #ffffff;
+  color: #78916f;
+  font-family: 'Graphik';
   font-weight: 500;
   font-size: 16px;
   position: relative;
@@ -82,7 +85,7 @@
 }
 
 .nav-link:hover {
-  color: #ffffff;
+  color: #78916f;
 }
 
 .nav-link:hover::before {
@@ -110,5 +113,11 @@
   
   .nav-link {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .nav-link {
+  padding: 8px 0px;
   }
 }
