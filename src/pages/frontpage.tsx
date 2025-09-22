@@ -1,53 +1,29 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import Navbar from '../components/Navbar';
+import Carousel, { type CarouselItem } from '../components/Carousel';
 import '../css/frontpage.css';
 
 const Frontpage: React.FC = () => {
-
-const [currentCard, setCurrentCard] = useState(0);
-
-const cards = [
-  {
-    id: 'medtech',
-    title: 'MEDTECH',
-    image: '/medtechGreenTint.png',
-    link: '/medtech'
-  },
-  {
-    id: 'industrial',
-    title: 'INDUSTRIAL',
-    image: '/industrialGreenTint.png',
-    link: '/industrial'
-  },
-  {
-    id: 'defense',
-    title: 'DEFENSE',
-    image: '/defence_green_brighter.png',
-    link: '/defense'
-  }
-];
-
-// Auto-scroll to the next card every 8 seconds
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentCard((prev) => (prev + 1) % cards.length);
-    }, 8000);
-  
-  return () => clearInterval(timer);
-  }, [cards.length]);
-
-  const goToCard = (index:number) => {
-    setCurrentCard(index);
-  };
-
-  const nextCard = () => {
-    setCurrentCard((prev) => (prev + 1) % cards.length);
-  };
-
-  const prevCard = () => {
-    setCurrentCard((prev) => (prev - 1 + cards.length) % cards.length);
-  };
+  const cards: CarouselItem[] = [
+    {
+      id: 'medtech',
+      title: 'MEDTECH',
+      image: '/medtechGreenTint.png',
+      link: '/medtech'
+    },
+    {
+      id: 'industrial',
+      title: 'INDUSTRIAL',
+      image: '/industrialGreenTint.png',
+      link: '/industrial'
+    },
+    {
+      id: 'defense',
+      title: 'DEFENSE',
+      image: '/defence_green_brighter.png',
+      link: '/defense'
+    }
+  ];
 
   return (
     <div className="frontpage">
@@ -71,46 +47,7 @@ const cards = [
         </section>
         
         {/* Carousel section */}
-        <section className="carousel-section">
-          <div className="carousel-container">
-            <div className="carousel-wrapper">
-              <div 
-                className="carousel-track"
-                style={{ transform: `translateX(-${currentCard * 33.33}%)` }}
-              >
-                {cards.map((card) => (
-                  <div key={card.id} className="carousel-slide">
-                    <Link to={card.link} className="carousel-card">
-                      <div className="carousel-card-content">
-                        <h2>{card.title}</h2>
-                        <img src={card.image} alt={card.title} />
-                      </div>
-                    </Link>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            {/* Navigation arrows */}
-            <button className="carousel-arrow carousel-arrow-left" onClick={prevCard}>
-              ‹
-            </button>
-            <button className="carousel-arrow carousel-arrow-right" onClick={nextCard}>
-              ›
-            </button>
-          </div>
-          
-          {/* Dots navigation */}
-          <div className="carousel-dots">
-            {cards.map((_, index) => (
-              <button
-                key={index}
-                className={`carousel-dot ${index === currentCard ? 'active' : ''}`}
-                onClick={() => goToCard(index)}
-              />
-            ))}
-          </div>
-        </section>
+        <Carousel items={cards} />
       </main>
     </div>
   );
