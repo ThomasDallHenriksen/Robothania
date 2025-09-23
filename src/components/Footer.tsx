@@ -6,10 +6,11 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>Kontakt</h3>
+          <h3>Information</h3>
           <div className="contact-info">
-            <p><strong>Adresse:</strong></p>
             <p>Robothania A/S<br />
+            CVR: 44 81 18 47<br />
+            <p><strong>Adresse:</strong></p>
             Landbrugsvej 6<br />
             5260 Hjallese<br />
             Danmark</p>
