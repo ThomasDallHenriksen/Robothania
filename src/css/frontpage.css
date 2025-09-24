@@ -152,6 +152,15 @@
     letter-spacing: 4px;
   }
   
+  /* Application Presentation */
+.application-presentation {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+}
+  
 }
 
 /* Large screens - 1400px to 1919px */
