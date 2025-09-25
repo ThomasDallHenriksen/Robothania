@@ -34,13 +34,7 @@ const VideoCarousel: React.FC<VideoCarouselProps> = ({
     
       return () => clearInterval(timer);
     }
-  }, [videos.length, autoScrollInterval, isPlaying, showVideoPlayer]);
-
-  const goToVideo = (index: number) => {
-    setCurrentVideo(index);
-    setShowVideoPlayer(false);
-    setIsPlaying(false);
-  };
+  }, [videos.length, autoScrollInterval, isPlaying, showVideoPlayer])
 
   const nextVideo = () => {
     setCurrentVideo((prev) => (prev + 1) % videos.length);
