@@ -59,6 +59,18 @@ const Frontpage: React.FC = () => {
       <main className="frontpage-main">
         {/* Interactive menu section - placeholder for future implementation */}
         <section className="interactive-menu-section">
+          <div className="nodes-placeholder">
+            <img src="/logoNodes.png" alt="Nodes" />
+          </div>
+          <div className="gear-placeholder">
+            <img src="/robothaniaGear.svg" alt="Gear" />
+          </div>
+          <div className="title">
+            <h1>ROBOTHANIA</h1>
+          </div>
+        </section>
+
+        <section className="interactive-menu-section">
           {/* Application Presentation */}
           <div className="application-presentation">
             <VideoCarousel videos={videos} autoScrollInterval={0} /> {/* if you want to disable auto scroll, set autoScrollInterval to 0 */}
@@ -66,12 +78,8 @@ const Frontpage: React.FC = () => {
           <div className="nodes-placeholder">
             <img src="/logoNodes.png" alt="Nodes" />
           </div>
-          <div className="gear-placeholder">
+          <div className="gear-placeholder-without-animation">
             <img src="/robothaniaGear.svg" alt="Gear" />
-          </div>
-          
-          <div className="title">
-            <h1>ROBOTHANIA</h1>
           </div>
         </section>
         
