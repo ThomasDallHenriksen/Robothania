@@ -225,7 +225,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -60px;
+  margin-left: -140px;
+  margin-top: 9px;
   position: relative;
   z-index: 2;
 }
@@ -240,6 +241,7 @@
   backdrop-filter: blur(100px);
   display: flex;
   align-items: center;
+  height: 60px;
 }
 
 /* remove fp-hero/benefits customizations */
@@ -271,12 +273,14 @@
   }
   
   .title {
-    margin-left: -80px;
+    margin-left: -140px;
+    margin-top: 6px;
   }
   
   .title h1 {
     font-size: 80px;
     letter-spacing: 4px;
+    height: 95px;
   }
   
 }
@@ -305,12 +309,14 @@
   }
   
   .title {
-    margin-left: -70px;
+    margin-left: -130px;
+    margin-top: 8px;
   }
   
   .title h1 {
     font-size: 72px;
     letter-spacing: 3px;
+    height: 90px;
   }
   
 }
@@ -339,12 +345,14 @@
   }
   
   .title {
-    margin-left: -65px;
+    margin-left: -120px;
+    margin-top: 6px;
   }
   
   .title h1 {
     font-size: 64px;
     letter-spacing: 3px;
+    height: 80px;
   }
   
 }
@@ -373,12 +381,14 @@
   }
   
   .title {
-    margin-left: -50px;
+    margin-left: -100px;
+    margin-top: 6px;
   }
   
   .title h1 {
     font-size: 52px;
     letter-spacing: 2px;
+    height: 70px;
   }
   
 }
@@ -407,12 +417,14 @@
   }
   
   .title {
-    margin-left: -45px;
+    margin-left: -95px;
+    margin-top: 6px;
   }
   
   .title h1 {
     font-size: 42px;
     letter-spacing: 2px;
+    height: 68px;
   }
   
 }
@@ -446,20 +458,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -40px;
+    margin-left: -65px;
     position: relative;
     z-index: 2;
+    margin-top: 5px;
   }
 
   .title h1 {
     font-size: 34px;
     font-weight: 800;
-    color: #71926b;
     letter-spacing: 2px;
-    backdrop-filter: blur(100px);
-    display: flex;
-    align-items: center;
-    height: 60px;
+    height: 50px;
+    
   }
   
 }
@@ -493,14 +503,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: -30px;
+    margin-left: -52px;
     position: relative;
     z-index: 2;
+    margin-top: 4px;
   }
   
   .title h1 {
     font-size: 28px;
     letter-spacing: 1px;
+    height: 40px;
   }
   
 }
@@ -531,11 +543,13 @@
 
   .title {
     margin-left: -25px;
+    margin-top: 1px;
   }
   
   .title h1 {
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
+    height: 19px;
   }
   
 }

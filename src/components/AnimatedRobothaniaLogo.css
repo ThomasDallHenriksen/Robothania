@@ -1,0 +1,149 @@
+.circle {
+    fill: #689367;
+  }
+
+.gear-combined {
+    fill: #689367;
+    
+  }
+
+.arrow-east, .arrow-west, .arrow-north, .arrow-south {
+    fill: #689367;
+}
+
+.animated-logo {
+    width: 150px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+#circle.animated {
+    animation: rotateVariable 15s ease-in-out infinite;
+    transform-origin: 302.4px 223.9px; /* Center of the circle */
+  }
+  
+  /* Animation for the gear */
+  #gear.animated {
+    animation: rotateVariable 15s ease-in-out infinite;
+    transform-origin: 302.4px 223.9px; /* Center of the gear */
+  }
+  
+  /* Animation for the arrows */
+  #arrows.animated {
+    animation: rotateVariable 15s ease-in-out infinite;
+    transform-origin: 302.4px 223.9px; /* Center of the arrows */
+  }
+  
+  /* Keyframes for rotation animation */
+  @keyframes rotateVariable {
+    0% {
+      transform: rotate(0deg);
+      animation-timing-function: ease-in-out;
+    }
+    10% {
+      transform: rotate(-360deg);
+      animation-timing-function: ease-in-out;
+    }
+    20% {
+      transform: rotate(0deg);
+      animation-timing-function: ease-in-out;
+    }
+    30% {
+      transform: rotate(360deg);
+      animation-timing-function: ease-in-out;
+    }
+    40% {
+      transform: rotate(0deg);
+      animation-timing-function: ease-in-out;
+    }
+    50% {
+      transform: rotate(720deg);
+      animation-timing-function: ease-in-out;
+    }
+    60% {
+      transform: rotate(180deg);
+      animation-timing-function: ease-in-out;
+    }
+    70% {
+      transform: rotate(270deg);
+      animation-timing-function: ease-in-out;
+    }
+    80% {
+      transform: rotate(270deg);
+      animation-timing-function: ease-in-out;
+    }
+    90% {
+      transform: rotate(270deg);
+      animation-timing-function: ease-in-out;
+    }
+    100% {
+      transform: rotate(0deg);
+      animation-timing-function: ease-in-out;
+    }
+  }
+
+/* ===== RESPONSIVE BREAKPOINTS - MATCHING YOUR EXISTING PATTERN ===== */
+
+/* Ultra-wide screens - 1920px and above */
+@media (min-width: 1920px) {
+    .animated-logo {
+      width: 550px;
+      height: 550px;
+    }
+  }
+  
+  /* Large screens - 1400px to 1919px */
+  @media (min-width: 1400px) and (max-width: 1919px) {
+    .animated-logo {
+      width: 500px;
+      height: 500px;
+    }
+  }
+  
+  /* Medium-large screens - 1200px to 1399px */
+  @media (min-width: 1200px) and (max-width: 1399px) {
+    .animated-logo {
+      width: 450px;
+      height: 450px;
+    }
+  }
+  
+  /* Medium screens - 900px to 1199px */
+  @media (min-width: 900px) and (max-width: 1199px) {
+    .animated-logo {
+      width: 380px;
+      height: 380px;
+    }
+  }
+  
+  /* Small screens - 769px to 899px */
+  @media (min-width: 769px) and (max-width: 899px) {
+    .animated-logo {
+      width: 360px;
+      height: 360px;
+    }
+  }
+  
+  /* Mobile screens - 481px to 768px */
+  @media (min-width: 481px) and (max-width: 768px) {
+    .animated-logo {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  /* Small mobile screens - 320px to 480px */
+  @media (min-width: 320px) and (max-width: 480px) {
+    .animated-logo {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  /* Extra small screens - below 320px */
+  @media (max-width: 319px) {
+    .animated-logo {
+      width: 100px;
+      height: 100px;
+    }
+  }

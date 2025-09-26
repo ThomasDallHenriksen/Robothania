@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Carousel, { type CarouselItem } from '../components/Carousel';
 import VideoCarousel, { type VideoItem } from '../components/VideoCarousel';
+import AnimatedRobothaniaLogo from '../components/AnimatedRobothaniaLogo';
 import '../css/frontpage.css';
 
 const Frontpage: React.FC = () => {
@@ -59,11 +60,8 @@ const Frontpage: React.FC = () => {
       <main className="frontpage-main">
         {/* Interactive menu section - placeholder for future implementation */}
         <section className="interactive-menu-section">
-          <div className="nodes-placeholder">
-            <img src="/nodes.svg" alt="Nodes" />
-          </div>
           <div className="gear-placeholder">
-            <img src="/robothaniaGear.svg" alt="Gear" />
+            <AnimatedRobothaniaLogo animated={true} />
           </div>
           <div className="title">
             <h1>ROBOTHANIA</h1>
@@ -115,11 +113,8 @@ const Frontpage: React.FC = () => {
           <div className="application-presentation">
             <VideoCarousel videos={videos} autoScrollInterval={0} />
           </div>
-          <div className="nodes-placeholder">
-            <img src="/logoNodes.png" alt="Nodes" />
-          </div>
           <div className="gear-placeholder-without-animation">
-            <img src="/robothaniaGear.svg" alt="Gear" />
+            <AnimatedRobothaniaLogo animated={false} />
           </div>
         </section>
         
