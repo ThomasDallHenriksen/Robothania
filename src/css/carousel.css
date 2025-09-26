@@ -24,13 +24,13 @@
 
 .carousel-track {
   display: flex;
-  width: 100%;
+  /* width is set with inline styling for dynamic width */
   height: 100%;
   transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide {
-  width: 100%;
+  /* width is set with inline styling for dynamic width */
   height: 100%;
   position: relative;
   flex-shrink: 0; /* prevent slides from shrinking */

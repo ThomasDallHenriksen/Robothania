@@ -154,7 +154,7 @@
 }
 
 /* Gear animation styles */
-.gear-placeholder {
+.gear-placeholder, .gear-placeholder-without-animation {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,7 +258,7 @@
     min-height: 400px;
   }
   
-  .gear-placeholder img {
+  .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 350px;
     height: 350px;
   }
@@ -292,7 +292,7 @@
     min-height: 375px;
   }
   
-  .gear-placeholder img {
+  .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 300px;
     height: 300px;
   }
@@ -326,7 +326,7 @@
     min-height: 350px;
   }
   
-  .gear-placeholder img {
+  .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 250px;
     height: 250px;
   }
@@ -360,7 +360,7 @@
     min-height: 320px;
   }
   
-  .gear-placeholder img {
+  .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 180px;
     height: 180px;
   }
@@ -394,7 +394,7 @@
     min-height: 300px;
   }
   
-  .gear-placeholder img {
+  .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 160px;
     height: 160px;
   }
@@ -429,7 +429,7 @@
     min-height: 280px;
   }
 
-  .gear-placeholder img {
+  .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 150px;
     height: 150px;
   }
@@ -476,7 +476,7 @@
     min-height: 250px;
   }
 
-  .gear-placeholder img {
+  .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 120px;
     height: 120px;
   }
@@ -517,7 +517,7 @@
     min-height: 200px;
   }
 
-  .gear-placeholder img {
+  .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 100px;
     height: 100px;
   }

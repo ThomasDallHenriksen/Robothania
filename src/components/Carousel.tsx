@@ -56,8 +56,8 @@ const Carousel: React.FC<CarouselProps> = ({
           <div 
             className="carousel-track"
             style={{ 
-              width: `${items.length * 100}%`, // Show all cards
-              transform: `translateX(-${currentCard * (100 / items.length)}%)` // Move to the current card
+              width: `${items.length * 100}%`,
+              transform: `translateX(-${currentCard * (100 / items.length)}%)` 
             }}
           >
             {items.map((item) => (

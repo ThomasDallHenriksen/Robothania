@@ -6,6 +6,9 @@ import Defense from './pages/defense';
 import Technology from './pages/technology';
 import Industries from './pages/industries';
 import About from './pages/about';
+import PrivacyPolicies from './pages/privacyPolicies';
+import CookiePolicies from './pages/cookiePolicies';
+import Footer from './components/Footer';
 import './App.css';
 
 function App() {
@@ -20,7 +23,10 @@ function App() {
           <Route path="/technology" element={<Technology />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/about" element={<About />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicies />} />
+          <Route path="/cookie-policy" element={<CookiePolicies />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

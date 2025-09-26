@@ -1,0 +1,251 @@
+.video-carousel {
+  width: 100%;
+  max-width: 400px;
+  height: 500px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.video-carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.video-carousel-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-carousel-track {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+.video-carousel-slide {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-card {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.video-card:hover {
+  box-shadow: 0 12px 35px rgba(0, 255, 136, 0.2);
+}
+
+/* Video Player Styles */
+.video-player-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.close-video-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.3s ease;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.close-video-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  scale: 1.1;
+  transition: scale 0.3s ease;
+}
+
+.close-icon {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1); /* Gør ikonet hvidt */
+}
+
+/* Thumbnail Styles */
+.video-thumbnail {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+}
+
+.video-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.video-play-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.video-card:hover .video-play-overlay {
+  opacity: 1;
+}
+
+.play-button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover .play-button {
+  transform: scale(1.1);
+}
+
+.video-card:hover .play-button {
+  transform: scale(1.1);
+}
+
+.video-info {
+  padding: 20px;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.video-info h3 {
+  color: #71926b;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  text-align: center;
+}
+
+.video-info p {
+  color: #cccccc;
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* Navigation arrows */
+.video-arrow-up {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.video-arrow-up:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.video-arrow-down {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.video-arrow-down:hover {
+  transform: translateX(-50%) scale(1.1);
+}
+
+.arrow-icon {
+  width: 40px;
+  height: 40px;
+  transition: filter 0.3s ease;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .video-carousel {
+    max-width: 350px;
+    height: 400px;
+  }
+  
+  .video-info h3 {
+    font-size: 16px;
+  }
+  
+  .video-info p {
+    font-size: 13px;
+  }
+  
+  .play-button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-carousel {
+    max-width: 300px;
+    height: 350px;
+  }
+  
+  .video-info {
+    padding: 15px;
+  }
+  
+  .video-info h3 {
+    font-size: 14px;
+  }
+  
+  .video-info p {
+    font-size: 12px;
+  }
+}

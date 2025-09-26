@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Carousel, { type CarouselItem } from '../components/Carousel';
+import VideoCarousel, { type VideoItem } from '../components/VideoCarousel';
 import '../css/frontpage.css';
 
 const Frontpage: React.FC = () => {
@@ -25,6 +26,30 @@ const Frontpage: React.FC = () => {
     }
   ];
 
+  const videos: VideoItem[] = [
+    {
+      id: 'video1',
+      title: 'Robothania Demo',
+      videoUrl: '/videos/demo.mp4',
+      thumbnail: '/video-thumbnails/demo-thumb.png',
+      description: 'Se vores seneste robot teknologi i aktion'
+    },
+    {
+      id: 'video2',
+      title: 'Industrielle Løsninger',
+      videoUrl: '/videos/industrial.mp4',
+      thumbnail: '/video-thumbnails/industrial-thumb.png',
+      description: 'Automatisering til moderne produktion'
+    },
+    {
+      id: 'video3',
+      title: 'Medtech Innovation',
+      videoUrl: '/videos/medtech.mp4',
+      thumbnail: '/video-thumbnails/medtech-thumb.png',
+      description: 'Fremtidens medicinsk teknologi'
+    }
+  ];
+
   return (
     <div className="frontpage">
       {/* Navigation bar */}
@@ -40,7 +65,6 @@ const Frontpage: React.FC = () => {
           <div className="gear-placeholder">
             <img src="/robothaniaGear.svg" alt="Gear" />
           </div>
-          
           <div className="title">
             <h1>ROBOTHANIA</h1>
           </div>
@@ -60,8 +84,8 @@ const Frontpage: React.FC = () => {
             <p className="fp-quote-sub">Robotics designed for tomorrow – built for you.</p>
           </div>
 
-          {/* Benefits list */}
-          <div className="fp-benefits-list">
+           {/* Benefits list */}
+           <div className="fp-benefits-list">
             <div className="fp-benefit-video-showcase">
               <h3 className="fp-video-headline">Full Adaptability</h3>
               <video className="fp-benefit-video" controls muted loop playsInline autoPlay preload="auto">
@@ -82,6 +106,20 @@ const Frontpage: React.FC = () => {
               <div className="fp-benefit-title">Innovation in Practice</div>
               <div className="fp-benefit-text">Shaping tomorrow with your knowledge and our innovation.</div>
             </div>
+          </div>  {/* Add this closing div */}
+        </section>  {/* Add this closing section tag */}
+
+        {/* Video Carousel section */}
+        <section className="interactive-menu-section">
+          {/* Application Presentation */}
+          <div className="application-presentation">
+            <VideoCarousel videos={videos} autoScrollInterval={0} />
+          </div>
+          <div className="nodes-placeholder">
+            <img src="/logoNodes.png" alt="Nodes" />
+          </div>
+          <div className="gear-placeholder-without-animation">
+            <img src="/robothaniaGear.svg" alt="Gear" />
           </div>
         </section>
         
