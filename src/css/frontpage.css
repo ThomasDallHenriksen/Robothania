@@ -196,8 +196,31 @@
   height: 60px;
 }
 
-/* remove fp-hero/benefits customizations */
+/* World's No. 1 heading */
+.world-no1-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  padding: 0 20px;
+}
 
+.world-no1-heading h1 {
+  font-family: 'Graphik';
+  font-size: 42px;
+  font-weight: 600;
+  color: #71926b;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  background: rgba(8, 8, 8, 0.9);
+  backdrop-filter: blur(100px);
+  padding: 20px 30px;
+  border-radius: 2px;
+  border-bottom: 2px solid rgba(113,146,107,0.3);
+  border-top: 2px solid rgba(113,146,107,0.3);
+}
 
 /* ===== RESPONSIVE BREAKPOINTS ===== */
 
@@ -208,7 +231,7 @@
   }
   
   .interactive-menu-section {
-    margin: 120px 0px;
+    margin: 42px 0px;
     min-height: 400px;
   }
   
@@ -235,6 +258,11 @@
     height: 95px;
   }
   
+  .world-no1-heading h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    padding: 30px 40px;
+  }
 }
 
 /* Large screens - 1400px to 1919px */
@@ -271,6 +299,11 @@
     height: 90px;
   }
   
+  .world-no1-heading h1 {
+    font-size: 42px;
+    letter-spacing: 1.5px;
+    padding: 25px 35px;
+  }
 }
 
 /* Medium-large screens - 1200px to 1399px */
@@ -307,6 +340,11 @@
     height: 80px;
   }
   
+  .world-no1-heading h1 {
+    font-size: 38px;
+    letter-spacing: 1.5px;
+    padding: 22px 32px;
+  }
 }
 
 /* Medium screens - 900px to 1199px */
@@ -316,7 +354,7 @@
   }
   
   .interactive-menu-section {
-    margin: 70px 0px;
+    margin: 0px 0px;
     min-height: 320px;
   }
   
@@ -343,6 +381,11 @@
     height: 70px;
   }
   
+  .world-no1-heading h1 {
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding: 20px 30px;
+  }
 }
 
 /* Small screens - 769px to 899px */
@@ -379,6 +422,11 @@
     height: 68px;
   }
   
+  .world-no1-heading h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+    padding: 18px 25px;
+  }
 }
 
 /* Mobile screens - 481px to 768px */
@@ -424,6 +472,16 @@
     
   }
   
+  .world-no1-heading {
+    margin: 30px 0;
+    padding: 0 15px;
+  }
+  
+  .world-no1-heading h1 {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    padding: 15px 20px;
+  }
 }
 
 /* Small mobile screens - 320px to 480px */
@@ -467,6 +525,16 @@
     height: 40px;
   }
   
+  .world-no1-heading {
+    margin: 25px 0;
+    padding: 0 10px;
+  }
+  
+  .world-no1-heading h1 {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    padding: 12px 16px;
+  }
 }
 
 /* Extra small screens - below 320px */
@@ -504,4 +572,14 @@
     height: 19px;
   }
   
+  .world-no1-heading {
+    margin: 20px 0;
+    padding: 0 8px;
+  }
+  
+  .world-no1-heading h1 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    padding: 10px 14px;
+  }
 }

@@ -68,6 +68,10 @@ const Frontpage: React.FC = () => {
           </div>
         </section>
 
+        <div className="world-no1-heading">
+          <h1>world's NO. 1 robotics design house</h1>
+        </div>
+
         {/* Content section between existing sections */}
         <section className="fp-content-section">
           {/* Tagline */}
