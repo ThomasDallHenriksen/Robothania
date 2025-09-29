@@ -61,19 +61,19 @@
       animation-timing-function: ease-in-out;
     }
     60% {
-      transform: rotate(180deg);
+      transform: rotate(270deg);
       animation-timing-function: ease-in-out;
     }
     70% {
-      transform: rotate(270deg);
+      transform: rotate(360deg);
       animation-timing-function: ease-in-out;
     }
     80% {
-      transform: rotate(270deg);
+      transform: rotate(360deg);
       animation-timing-function: ease-in-out;
     }
     90% {
-      transform: rotate(270deg);
+      transform: rotate(360deg);
       animation-timing-function: ease-in-out;
     }
     100% {
