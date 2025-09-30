@@ -159,13 +159,6 @@
   justify-content: center;
   align-items: center;
 }
-.nodes-placeholder img {
-  width: 116px;
-  height: 248px;
-  position: relative;
-  left: 49px;
-  top: -2px;
-}
 
 .gear-placeholder img {
   width: 200px;
@@ -207,7 +200,7 @@
 
 .world-no1-heading h1 {
   font-family: 'Graphik';
-  font-size: 42px;
+  font-size: clamp(1rem, 3.2vw, 3.5rem);
   font-weight: 600;
   color: #71926b;
   letter-spacing: 1px;
@@ -240,13 +233,6 @@
     height: 350px;
   }
   
-  .nodes-placeholder img {
-    width: 207px;
-    height: 433px;
-    left: 87px;
-    top: -4.5px;
-  }
-  
   .title {
     margin-left: -140px;
     margin-top: 6px;
@@ -259,7 +245,6 @@
   }
   
   .world-no1-heading h1 {
-    font-size: 48px;
     letter-spacing: 2px;
     padding: 30px 40px;
   }
@@ -272,20 +257,13 @@
   }
   
   .interactive-menu-section {
-    margin: 100px 0px;
+    margin: 0px 0px;
     min-height: 375px;
   }
   
   .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 300px;
     height: 300px;
-  }
-  
-  .nodes-placeholder img {
-    width: 173px;
-    height: 371px;
-    left: 74px;
-    top: -3.5px;
   }
   
   .title {
@@ -300,7 +278,6 @@
   }
   
   .world-no1-heading h1 {
-    font-size: 42px;
     letter-spacing: 1.5px;
     padding: 25px 35px;
   }
@@ -313,20 +290,13 @@
   }
   
   .interactive-menu-section {
-    margin: 90px 0px;
+    margin: 0px 0px;
     min-height: 350px;
   }
   
   .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 250px;
     height: 250px;
-  }
-  
-  .nodes-placeholder img {
-    width: 144px;
-    height: 308px;
-    left: 61px;
-    top: -3px;
   }
   
   .title {
@@ -341,7 +311,6 @@
   }
   
   .world-no1-heading h1 {
-    font-size: 38px;
     letter-spacing: 1.5px;
     padding: 22px 32px;
   }
@@ -354,20 +323,13 @@
   }
   
   .interactive-menu-section {
-    margin: 0px 0px;
+    margin:0px 0px;
     min-height: 320px;
   }
   
   .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 180px;
     height: 180px;
-  }
-  
-  .nodes-placeholder img {
-    width: 103px;
-    height: 224px;
-    left: 44px;
-    top: -0.5px;
   }
   
   .title {
@@ -382,7 +344,6 @@
   }
   
   .world-no1-heading h1 {
-    font-size: 32px;
     letter-spacing: 1px;
     padding: 20px 30px;
   }
@@ -395,20 +356,13 @@
   }
   
   .interactive-menu-section {
-    margin: 60px 0px;
+    margin: 0px 0px;
     min-height: 300px;
   }
   
   .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 160px;
     height: 160px;
-  }
-  
-  .nodes-placeholder img {
-    width: 95px;
-    height: 197px;
-    left: 40px;
-    top: 0px;
   }
   
   .title {
@@ -423,7 +377,6 @@
   }
   
   .world-no1-heading h1 {
-    font-size: 28px;
     letter-spacing: 1px;
     padding: 18px 25px;
   }
@@ -437,21 +390,13 @@
   }
   
   .interactive-menu-section {
-    margin: 50px 0px;
+    margin: 0px 0px;
     min-height: 280px;
   }
 
   .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 150px;
     height: 150px;
-  }
-
-  .nodes-placeholder img {
-    width: 87px;
-    height: 185px;
-    position: relative;
-    left: 37px;
-    top: -0.5px;
   }
 
   .title {
@@ -478,7 +423,6 @@
   }
   
   .world-no1-heading h1 {
-    font-size: 24px;
     letter-spacing: 0.5px;
     padding: 15px 20px;
   }
@@ -492,21 +436,13 @@
   }
   
   .interactive-menu-section {
-    margin: 40px 0px;
+    margin: 0px 0px;
     min-height: 250px;
   }
 
   .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 120px;
     height: 120px;
-  }
-
-  .nodes-placeholder img {
-    width: 71px;
-    height: 148px;
-    position: relative;
-    left: 30px;
-    top: 0px;
   }
 
   .title {
@@ -531,9 +467,8 @@
   }
   
   .world-no1-heading h1 {
-    font-size: 20px;
     letter-spacing: 0.5px;
-    padding: 12px 16px;
+    padding: 12px 4px;
   }
 }
 
@@ -545,20 +480,13 @@
   }
   
   .interactive-menu-section {
-    margin: 30px 0px;
+    margin: 0px 0px;
     min-height: 200px;
   }
 
   .gear-placeholder img, .gear-placeholder-without-animation img {
     width: 100px;
     height: 100px;
-  }
-
-  .nodes-placeholder img {
-    width: 60px;
-    height: 120px;
-    left: 25px;
-    top: 0px;
   }
 
   .title {
@@ -578,7 +506,6 @@
   }
   
   .world-no1-heading h1 {
-    font-size: 18px;
     letter-spacing: 0.5px;
     padding: 10px 14px;
   }

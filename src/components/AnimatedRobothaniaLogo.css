@@ -95,24 +95,24 @@
   /* Large screens - 1400px to 1919px */
   @media (min-width: 1400px) and (max-width: 1919px) {
     .animated-logo {
-      width: 500px;
-      height: 500px;
+      width: 470px;
+      height: 470px;
     }
   }
   
   /* Medium-large screens - 1200px to 1399px */
   @media (min-width: 1200px) and (max-width: 1399px) {
     .animated-logo {
-      width: 450px;
-      height: 450px;
+      width: 440px;
+      height: 440px;
     }
   }
   
   /* Medium screens - 900px to 1199px */
   @media (min-width: 900px) and (max-width: 1199px) {
     .animated-logo {
-      width: 380px;
-      height: 380px;
+      width: 400px;
+      height: 400px;
     }
   }
   
