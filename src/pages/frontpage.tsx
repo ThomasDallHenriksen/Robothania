@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Carousel, { type CarouselItem } from '../components/Carousel'; //uncomment the <Carousel items={cards} /> further down to enable industry carousel
+{/*import Carousel, { type CarouselItem } from '../components/Carousel'; //uncomment the <Carousel items={cards} /> further down to enable industry carousel*/}
 import VideoCarousel, { type VideoItem } from '../components/VideoCarousel';
 import AnimatedRobothaniaLogo from '../components/AnimatedRobothaniaLogo';
 import CardsRow, { type CardsRowItem } from '../components/CardsRow';
@@ -27,7 +27,7 @@ const Frontpage: React.FC = () => {
       link: '/defense'
     }
   ];
-  const cards: CarouselItem[] = [ //cards for industry carousel
+  {/*const cards: CarouselItem[] = [ //cards for industry carousel
     {
       id: 'medtech',
       title: 'MEDTECH',
@@ -46,7 +46,7 @@ const Frontpage: React.FC = () => {
       image: '/defence_green_brighter.png',
       link: '/defense'
     }
-  ];
+  ];*/}
 
   const videos: VideoItem[] = [ //videos for video carousel
     {
