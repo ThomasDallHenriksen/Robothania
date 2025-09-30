@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
         
         {/* Navigation items on the right (for future use) */}
         <div className="navbar-menu">
-          <Link to="/technology" className="nav-link">Technology</Link>
+          <Link to="/Technologies" className="nav-link">Technologies</Link>
           <Link to="/industries" className="nav-link">Industries</Link>
           <Link to="/about" className="nav-link">About</Link>
         </div>

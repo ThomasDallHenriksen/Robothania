@@ -3,7 +3,7 @@ import Frontpage from './pages/frontpage';
 import Medtech from './pages/medtech';
 import Industrial from './pages/industrial';
 import Defense from './pages/defense';
-import Technology from './pages/technology';
+import Technologies from './pages/technologies';
 import Industries from './pages/industries';
 import About from './pages/about';
 import PrivacyPolicies from './pages/privacyPolicies';
@@ -20,7 +20,7 @@ function App() {
           <Route path="/medtech" element={<Medtech />} />
           <Route path="/industrial" element={<Industrial />} />
           <Route path="/defense" element={<Defense />} />
-          <Route path="/technology" element={<Technology />} />
+          <Route path="/technologies" element={<Technologies />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/about" element={<About />} />
           <Route path="/privacy-policy" element={<PrivacyPolicies />} />
