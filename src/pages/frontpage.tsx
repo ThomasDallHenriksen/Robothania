@@ -1,12 +1,33 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Carousel, { type CarouselItem } from '../components/Carousel';
+import Carousel, { type CarouselItem } from '../components/Carousel'; //uncomment the <Carousel items={cards} /> further down to enable industry carousel
 import VideoCarousel, { type VideoItem } from '../components/VideoCarousel';
 import AnimatedRobothaniaLogo from '../components/AnimatedRobothaniaLogo';
+import CardsRow, { type CardsRowItem } from '../components/CardsRow';
 import '../css/frontpage.css';
 
 const Frontpage: React.FC = () => {
-  const cards: CarouselItem[] = [
+  const cardsRow: CardsRowItem[] = [ //cards for cards row
+    {
+      id: 'medtech',
+      title: 'MEDTECH',
+      image: '/medtechGreenTint.png',
+      link: '/medtech'
+    },
+    {
+      id: 'industrial',
+      title: 'INDUSTRIAL',
+      image: '/industrialGreenTint.png',
+      link: '/industrial'
+    },
+    {
+      id: 'defense',
+      title: 'DEFENSE',
+      image: '/defence_green_brighter.png',
+      link: '/defense'
+    }
+  ];
+  const cards: CarouselItem[] = [ //cards for industry carousel
     {
       id: 'medtech',
       title: 'MEDTECH',
@@ -27,7 +48,7 @@ const Frontpage: React.FC = () => {
     }
   ];
 
-  const videos: VideoItem[] = [
+  const videos: VideoItem[] = [ //videos for video carousel
     {
       id: 'video1',
       title: 'Robothania Demo',
@@ -121,9 +142,12 @@ const Frontpage: React.FC = () => {
             <AnimatedRobothaniaLogo animated={false} />
           </div>
         </section>
+
+        {/* Cards row section */}
+        <CardsRow items={cardsRow} />
         
-        {/* Carousel section */}
-        <Carousel items={cards} />
+        {/* Carousel section - commented out */}
+        {/* <Carousel items={cards} /> */}
       </main>
     </div>
   );
