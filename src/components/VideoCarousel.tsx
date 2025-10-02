@@ -12,18 +12,27 @@ export interface VideoItem {
 interface VideoCarouselProps {
   videos: VideoItem[];
   autoScrollInterval?: number; // in milliseconds, 0 to disable
+  onVideoChange?: (videoId: string) => void;
   className?: string;
 }
 
 const VideoCarousel: React.FC<VideoCarouselProps> = ({ 
   videos, 
   autoScrollInterval = 10000,
+  onVideoChange,
   className = ''
 }) => {
   const [currentVideo, setCurrentVideo] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [showVideoPlayer, setShowVideoPlayer] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+
+  // Notify parent when video changes
+  useEffect(() => {
+    if (onVideoChange && videos[currentVideo]) {
+      onVideoChange(videos[currentVideo].id);
+    }
+  }, [currentVideo, onVideoChange, videos]);
 
   // Auto-scroll to the next video
   useEffect(() => {

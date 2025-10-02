@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
-{/*import Carousel, { type CarouselItem } from '../components/Carousel'; //uncomment the <Carousel items={cards} /> further down to enable industry carousel*/}
+{/*import Carousel, { type CarouselItem } from '../components/Carousel'; //uncomment the <Carousel items={cards} /> further down to enable industry carousel*/ }
 import VideoCarousel, { type VideoItem } from '../components/VideoCarousel';
 import AnimatedRobothaniaLogo from '../components/AnimatedRobothaniaLogo';
 import CardsRow, { type CardsRowItem } from '../components/CardsRow';
+import TechnologyGear from '../components/TechnologyGear';
 import '../css/frontpage.css';
 
 const Frontpage: React.FC = () => {
-  const cardsRow: CardsRowItem[] = [ //cards for cards row
+  const [selectedVideoId, setSelectedVideoId] = useState<string | null>(null);
+
+  const cardsRow: CardsRowItem[] = [
     {
       id: 'medtech',
       title: 'MEDTECH',
@@ -48,7 +51,7 @@ const Frontpage: React.FC = () => {
     }
   ];*/}
 
-  const videos: VideoItem[] = [ //videos for video carousel
+  const videos: VideoItem[] = [
     {
       id: 'video1',
       title: 'Robothania Demo',
@@ -72,11 +75,29 @@ const Frontpage: React.FC = () => {
     }
   ];
 
+  // Define which nodes should light up for each video
+  const ActiveNodesForVideo = (videoId: string): string[] => {
+    switch (videoId) {
+      case 'video1':
+        return ['node7', 'node5', 'node3'];
+      case 'video2':
+        return ['node4', 'node5', 'node2'];
+      case 'video3':
+        return ['node7', 'node1', 'node5'];
+      default:
+        return [];
+    }
+  };
+
+  const handleVideoChange = (videoId: string) => {
+    setSelectedVideoId(videoId);
+  };
+
   return (
     <div className="frontpage">
       {/* Navigation bar */}
       <Navbar />
-      
+
       {/* Main content area */}
       <main className="frontpage-main">
         {/* Interactive menu section - placeholder for future implementation */}
@@ -107,8 +128,8 @@ const Frontpage: React.FC = () => {
             <p className="fp-quote-sub">Robotics designed for tomorrow – built for you.</p>
           </div>
 
-           {/* Benefits list */}
-           <div className="fp-benefits-list">
+          {/* Benefits list */}
+          <div className="fp-benefits-list">
             <div className="fp-benefit-video-showcase">
               <h3 className="fp-video-headline">Full Adaptability</h3>
               <video className="fp-benefit-video" controls muted loop playsInline autoPlay preload="auto">
@@ -129,25 +150,31 @@ const Frontpage: React.FC = () => {
               <div className="fp-benefit-title">Innovation in Practice</div>
               <div className="fp-benefit-text">Shaping tomorrow with your knowledge and our innovation.</div>
             </div>
-          </div>  {/* Add this closing div */}
-        </section>  {/* Add this closing section tag */}
+          </div>
+        </section>
 
         {/* Video Carousel section */}
         <section className="interactive-menu-section">
-          {/* Application Presentation */}
-          <div className="application-presentation">
-            <VideoCarousel videos={videos} autoScrollInterval={0} />
-          </div>
-          <div className="gear-placeholder-without-animation">
-            <AnimatedRobothaniaLogo animated={false} />
+          <div className="application-presentation-container">
+            {/* Application Presentation */}
+            <div className="application-presentation">
+              <VideoCarousel 
+                videos={videos} 
+                autoScrollInterval={0} 
+                onVideoChange={handleVideoChange}
+              />
+            </div>
+
+            <div className="gear-container">
+              <TechnologyGear 
+                activeNodes={ActiveNodesForVideo(selectedVideoId || '')}
+              />
+            </div>
           </div>
         </section>
 
         {/* Cards row section */}
         <CardsRow items={cardsRow} />
-        
-        {/* Carousel section - commented out */}
-        {/* <Carousel items={cards} /> */}
       </main>
     </div>
   );

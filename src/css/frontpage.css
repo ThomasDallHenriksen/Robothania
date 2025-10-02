@@ -153,6 +153,134 @@
   min-height: 325px;
 }
 
+
+.application-presentation-container{
+  margin: 80px 0px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 325px;
+  position: relative;
+  padding: 0 40px;
+}
+
+/* Technology labels container */
+.technology-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  min-width: 200px;
+  z-index: 2;
+}
+
+/* Individual technology label */
+.tech-label {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: rgba(113, 146, 107, 0.1);
+  border: 1px solid rgba(113, 146, 107, 0.3);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tech-label:hover {
+  background: rgba(113, 146, 107, 0.2);
+  border-color: rgba(113, 146, 107, 0.5);
+  transform: translateX(5px);
+}
+
+.tech-label span {
+  color: #e6ffe6;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Application presentation */
+.application-presentation {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  z-index: 2;
+}
+
+/* Gear container with connecting lines */
+.gear-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 650px;
+  z-index: 1;
+}
+
+.gear-placeholder-without-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+/* SVG connection lines */
+.connection-lines {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .application-presentation-container {
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 20px;
+  }
+  
+  .technology-labels {
+    order: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: auto;
+  }
+  
+  .application-presentation {
+    order: 2;
+    max-width: 100%;
+  }
+  
+  .gear-container {
+    order: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .technology-labels {
+    gap: 10px;
+  }
+  
+  .tech-label {
+    padding: 6px 12px;
+  }
+  
+  .tech-label span {
+    font-size: 12px;
+  }
+}
+
 /* Gear animation styles */
 .gear-placeholder, .gear-placeholder-without-animation {
   display: flex;
