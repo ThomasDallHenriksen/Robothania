@@ -79,11 +79,11 @@ const Frontpage: React.FC = () => {
   const ActiveNodesForVideo = (videoId: string): string[] => {
     switch (videoId) {
       case 'video1':
-        return ['node7', 'node5', 'node3'];
+        return ['node1', 'node7', 'node5', 'node3'];
       case 'video2':
-        return ['node4', 'node5', 'node2'];
+        return ['node1', 'node4', 'node5', 'node2'];
       case 'video3':
-        return ['node7', 'node1', 'node5'];
+        return ['node1', 'node4', 'node2', 'node6'];
       default:
         return [];
     }
