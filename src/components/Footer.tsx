@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-section">
-          <h3>Kontaktoplysninger</h3>
+          <h3>Contact information</h3>
           <div className="contact-details">
             <p><strong>Telefon:</strong> +45 00 00 00 00</p>
             <p><strong>Email:</strong> info@robothania.dk</p>
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-section">
-          <h3>Juridisk</h3>
+          <h3>Legal</h3>
           <div className="legal-links">
             <a href="/cookie-policy" className="footer-link">Cookie Policy</a>
             <a href="/privacy-policy" className="footer-link">Privacy Policy</a>

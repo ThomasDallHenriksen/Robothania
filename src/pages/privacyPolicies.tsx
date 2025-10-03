@@ -13,7 +13,7 @@ const PrivacyPolicies: React.FC = () => {
           
           <div className={styles.section}>
             <h2>Owner and Data Controller</h2>
-            <p>Robothania Aps, Odense, Denmark</p>
+            <p>Robothania A/S, Odense, Denmark</p>
             <p>Owner contact email: <a href="mailto:info@robothania.dk">info@robothania.dk</a></p>
             <p>Robothania respects your privacy. We do not share, sell, or rent any of the information collected to any third parties and do not intend to do so in the future.</p>
           </div>

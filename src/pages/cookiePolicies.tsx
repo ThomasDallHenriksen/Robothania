@@ -11,8 +11,8 @@ const CookiePolicies: React.FC = () => {
         <div className={styles.content}>
           <h1>COOKIE POLICY</h1>
           <div className={styles.placeholder}>
-            <h2>Kommer snart...</h2>
-            <p>Denne side er under udvikling. Indhold vil blive tilføjet snart.</p>
+            <h2>comming soon...</h2>
+            <p>This page is under construction. Content will be added soon.</p>
           </div>
         </div>
       </main>
