@@ -54,24 +54,24 @@ const Frontpage: React.FC = () => {
   const videos: VideoItem[] = [
     {
       id: 'video1',
-      title: 'Robothania Demo',
+      title: 'Applikation 1',
       videoUrl: '/videos/demo.mp4',
       thumbnail: '/video-thumbnails/demo-thumb.png',
-      description: 'Se vores seneste robot teknologi i aktion'
+      description: 'Se vores seneste robotteknologi inde for sikkerhedssektoren  '
     },
     {
       id: 'video2',
-      title: 'Industrielle Løsninger',
+      title: 'applikation 2',
       videoUrl: '/videos/industrial.mp4',
       thumbnail: '/video-thumbnails/industrial-thumb.png',
-      description: 'Automatisering til moderne produktion'
+      description: 'Vi udvikler robuste robotløsninger, der styrker produktiviteten og skaber værdi i industrien'
     },
     {
       id: 'video3',
-      title: 'Medtech Innovation',
+      title: 'Applikation 3',
       videoUrl: '/videos/medtech.mp4',
       thumbnail: '/video-thumbnails/medtech-thumb.png',
-      description: 'Fremtidens medicinsk teknologi'
+      description: 'Med avanceret robotteknologi kan vi hjælpe medtech-industrien med at skabe bedre behandlingsmuligheder for patienter'
     }
   ];
 
@@ -81,7 +81,7 @@ const Frontpage: React.FC = () => {
       case 'video1':
         return ['node1', 'node7', 'node5', 'node3'];
       case 'video2':
-        return ['node1', 'node4', 'node5', 'node2'];
+        return ['node2', 'node4', 'node5', 'node7'];
       case 'video3':
         return ['node1', 'node4', 'node2', 'node6'];
       default:
