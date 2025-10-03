@@ -153,7 +153,6 @@
 
 /* Interactive menu section */
 .interactive-menu-section {
-
   margin: 80px 0px;
   flex: 1;
   display: flex;
@@ -161,7 +160,6 @@
   align-items: center;
   min-height: 325px;
 }
-
 
 .application-presentation-container {
   margin: 80px 0px;
@@ -199,18 +197,6 @@
   align-items: center;
   position: relative;
   z-index: 3;
-}
-
-/* SVG connection lines */
-.connection-lines {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: 400px;
-  z-index: 1;
-  pointer-events: none;
 }
 
 /* Gear animation styles */
