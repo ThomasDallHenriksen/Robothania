@@ -28,7 +28,6 @@ const Footer: React.FC = () => {
         <div className="footer-section">
           <h3>Legal</h3>
           <div className="legal-links">
-            <a href="/cookie-policy" className="footer-link">Cookie Policy</a>
             <a href="/privacy-policy" className="footer-link">Privacy Policy</a>
           </div>
         </div>
