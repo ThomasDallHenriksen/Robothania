@@ -1,0 +1,77 @@
+.page {
+  min-height: 100vh;
+  background: rgba(8, 8, 8);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Banner */
+.sectionBanner { position: relative; border-bottom: 1px solid rgba(113,146,107,0.3); background: linear-gradient(180deg, #0b0b0b 0%, #0e1510 100%); }
+.bannerParallax { width: 100%; height: 56vh; min-height: 360px; max-height: 520px; background-image: url('/industrialGreenTint.png'); background-size: cover; background-position: center; background-attachment: fixed; filter: saturate(0.9) brightness(0.9) contrast(1.08); }
+.sectionBannerTitle { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); margin: 0; color: #eaffea; letter-spacing: 6px; background: rgba(0,0,0,0.5); padding: 12px 28px; border-radius: 10px; font-weight: 900; }
+.titleGlow { position: relative; z-index: 1; text-shadow: 0 0 18px rgba(113,146,107,0.45), 0 6px 22px rgba(0,0,0,0.6); }
+.titleShine { position: absolute; inset: -2px; pointer-events: none; background: radial-gradient(1200px 200px at 50% -60%, rgba(255,255,255,0.18), transparent 60%); border-radius: 12px; }
+
+/* Intro panel */
+.introWrapper { display: flex; justify-content: center; padding: 24px 16px; background: rgba(14,23,17,0.8); border-top: 1px solid rgba(113,146,107,0.25); border-bottom: 1px solid rgba(113,146,107,0.25); }
+.intro { width: 100%; max-width: 1180px; background: #0c120e; color: #bfe0b9; padding: 20px; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,0.3) inset, 0 0 1px rgba(255,255,255,0.05); backdrop-filter: blur(4px); border: 1px solid rgba(113,146,107,0.25); }
+.kicker { color: #71926b; font-size: 18px; text-align: center; margin: 4px 0 12px; }
+.statement { margin: 0; color: #71926b; text-align: center; font-size: 18px; line-height: 1.6; font-weight: 600; }
+.quoteMark { color: #71926b; font-size: 22px; vertical-align: baseline; padding: 0 6px; }
+
+/* Benefits vertical list */
+.benefitsGrid { display: flex; flex-direction: column; gap: 14px; max-width: 920px; width: 100%; margin: 24px auto 56px; padding: 0 16px; }
+.benefit { display: flex; flex-direction: column; background: rgba(12,18,14,0.6); border: none; border-radius: 16px; box-shadow: 0 10px 24px rgba(0,0,0,0.22); padding: 18px 20px; transition: transform 200ms ease, box-shadow 200ms ease; backdrop-filter: blur(6px); }
+.benefit:hover { transform: translateY(-2px); box-shadow: 0 14px 30px rgba(0,0,0,0.3); }
+.benefitTitle { display: flex; align-items: center; gap: 10px; color: #d7f3d2; font-weight: 800; letter-spacing: 0.5px; padding: 2px 0; margin-bottom: 6px; }
+.benefitIcon { display: inline-flex; align-items: center; justify-content: center; color: #eaffea; background: linear-gradient(135deg, #5f7b59, #71926b); width: 32px; height: 32px; border-radius: 10px; }
+.benefitText { color: #dfeedd; background: transparent; border: none; padding: 0 2px 2px; min-height: initial; }
+
+.content h1 {
+  color: #71926b;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.placeholder {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+  border-radius: 10px;
+  border: 2px dashed #71926b;
+}
+
+.placeholder h2 {
+  color: #71926b;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.placeholder p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .bannerParallax { height: 40vh; min-height: 240px; }
+  .benefitsGrid { max-width: 680px; }
+}
