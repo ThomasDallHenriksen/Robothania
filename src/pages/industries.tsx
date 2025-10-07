@@ -1,53 +1,51 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
-import styles from '../css/industries.module.css';
+import '../css/industries.css';
 
 const Industries: React.FC = () => {
   return (
-    <div className={styles.page}>
+    <div className="page">
       <Navbar />
       
-      <main className={styles.main}>
-        <div className={styles.hero}>
+      <main className="main">
+        <div className="hero">
           <img
-            className={styles.heroLogo}
-            src="/Robothania_logo_White.png"
+            className="heroLogo"
+            src="/Robothania_logo_Green.svg"
             alt="Robothania logo"
           />
         </div>
 
-        <section className={styles.introWrapper}>
-          <div className={styles.intro}>
-            <p className={styles.kicker}>Our technology is a specialized, single-purpose systems — built to perform each task perfectly.</p>
-            <blockquote className={styles.statement}>
-              <span className={styles.quoteMark}>“</span>
-              <span>
-                At Robothania, we bring the future to you. Our technology isn’t just a product — it’s a platform, fully adaptable to medtech, defense, or industrial workflows.
+        <section className="introWrapper">
+          <div className="intro">
+            <p className="kicker">Our technology is a specialized, single-purpose systems — built to perform each task perfectly.</p>
+            <blockquote className="statement">
+              <span className="quoteMark">"</span>
+              <span className="kicker">
+                At Robothania, we bring the future to you. Our technology isn't just a product — it's a platform, fully adaptable to medtech, defense, or industrial workflows.
               </span>
               <br />
               <strong>Precision. Efficiency. Innovation. Accessibility.</strong>
-              <span className={styles.quoteMark}>”</span>
+              <span className="quoteMark">"</span>
             </blockquote>
           </div>
         </section>
 
-        <section className={styles.cards}>
-          <Link to="/medtech" className={styles.card} aria-label="Medtech">
-            <img src="/medtechGreenTint.png" alt="Medtech" className={styles.cardImg} />
-            <div className={styles.cardOverlay}>MEDTECH</div>
+        <section className="cards">
+          <Link to="/medtech" className="card" aria-label="Medtech">
+            <img src="/medtechGreenTint.png" alt="Medtech" className="cardImg" />
+            <div className="cardOverlay">MEDTECH</div>
           </Link>
-          <Link to="/industrial" className={styles.card} aria-label="Industrial">
-            <img src="/industrialGreenTint.png" alt="Industrial" className={styles.cardImg} />
-            <div className={styles.cardOverlay}>INDUSTRIAL</div>
+          <Link to="/industrial" className="card" aria-label="Industrial">
+            <img src="/industrialGreenTint.png" alt="Industrial" className="cardImg" />
+            <div className="cardOverlay">INDUSTRIAL</div>
           </Link>
-          <Link to="/defense" className={styles.card} aria-label="Defence">
-            <img src="/defence_green_brighter.png" alt="Defence" className={styles.cardImg} />
-            <div className={styles.cardOverlay}>DEFENCE</div>
+          <Link to="/defense" className="card" aria-label="Defence">
+            <img src="/defence_green_brighter.png" alt="Defence" className="cardImg" />
+            <div className="cardOverlay">DEFENCE</div>
           </Link>
         </section>
-
-        
       </main>
     </div>
   );

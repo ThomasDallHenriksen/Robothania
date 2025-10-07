@@ -1,0 +1,510 @@
+.page {
+  height: 100%;
+  background: rgba(8, 8, 8);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  width: 100%;
+  height: 260px;
+  background: linear-gradient(180deg, #0b0b0b 0%, #0f1a12 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(113, 146, 107, 0.3);
+}
+
+.heroLogo {
+  max-height: 140px;
+  opacity: 0.9;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
+}
+
+.introWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 24px 16px;
+  background: rgba(14, 23, 17, 0.8);
+  border-top: 1px solid rgba(113,146,107,0.25);
+  border-bottom: 1px solid rgba(113,146,107,0.25);
+}
+
+.intro {
+  width: 100%;
+  max-width: 1180px;
+  background: #0c120e;
+  color: #bfe0b9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3) inset;
+}
+
+.kicker {
+  color: #71926b;
+  font-size: 18px;
+  font-family: 'Graphik', sans-serif;
+  text-align: center;
+  margin: 4px 0 12px;
+}
+
+.statement {
+  margin: 0;
+  color: #71926b;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.quoteMark {
+  color: #71926b;
+  font-size: 22px;
+  vertical-align: baseline;
+  padding: 0 6px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: calc(100vw - 40px);
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  display: block;
+  border-radius: 15px;
+  overflow: hidden;
+  background: #0e1611;
+  border: 1px solid rgba(113,146,107,0.35);
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.cardImg {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  filter: saturate(0.8) contrast(1.05) brightness(0.9);
+  transition: transform 300ms ease, filter 300ms ease;
+}
+
+.cardOverlay {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #e6ffe6;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 30px;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-weight: 800;
+  font-size: 24px;
+  font-family: 'Graphik', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
+}
+
+.card:hover .cardImg {
+  transform: scale(1.04);
+  filter: saturate(1) contrast(1.1) brightness(1);
+}
+
+.card:hover .cardOverlay {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Inline Industry Section */
+.industrySection {
+  max-width: 1180px;
+  width: 100%;
+  margin: 8px auto 48px;
+  padding: 0 16px;
+}
+
+.sectionBanner {
+  position: relative;
+  border: 1px solid rgba(113,146,107,0.35);
+  border-radius: 14px;
+  overflow: hidden;
+  background: #0e1611;
+}
+
+.sectionBannerImg {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  filter: saturate(0.85) brightness(0.9) contrast(1.05);
+}
+
+.sectionBannerTitle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: #ffffff;
+  letter-spacing: 6px;
+  background: rgba(0,0,0,0.45);
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-weight: 900;
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.benefit {
+  background: #0c120e;
+  border: 1px solid rgba(113,146,107,0.3);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  padding: 18px;
+}
+
+.benefitTitle {
+  background: #3e66c5;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 16px 14px;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.benefitText {
+  color: #d7e6d3;
+  background: #0f1712;
+  border: 1px solid rgba(113,146,107,0.25);
+  border-radius: 8px;
+  padding: 14px;
+  min-height: 84px;
+}
+
+.content h1 {
+  color: #71926b;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Ultra-wide screens - 1920px and above */
+@media (min-width: 1920px) {
+  .cards {
+    padding: 60px 40px;
+    gap: 30px;
+    max-width: 1800px;
+  }
+  
+  .cardImg {
+    height: 450px;
+  }
+  
+  .cardOverlay {
+    font-size: 32px;
+    padding: 20px 40px;
+    letter-spacing: 3px;
+  }
+  
+  .hero {
+    height: 320px;
+  }
+  
+  .heroLogo {
+    max-height: 180px;
+  }
+  
+  .intro {
+    padding: 30px;
+  }
+  
+  .kicker, .statement {
+    font-size: 20px;
+  }
+}
+
+/* Large screens - 1400px to 1919px */
+@media (min-width: 1400px) and (max-width: 1919px) {
+  .cards {
+    padding: 50px 35px;
+    gap: 25px;
+    max-width: 1800px;
+  }
+  
+  .cardImg {
+    height: 400px;
+  }
+  
+  .cardOverlay {
+    font-size: 28px;
+    padding: 18px 35px;
+    letter-spacing: 2.5px;
+  }
+  
+  .hero {
+    height: 300px;
+  }
+  
+  .heroLogo {
+    max-height: 160px;
+  }
+  
+  .intro {
+    padding: 25px;
+  }
+  
+  .kicker, .statement {
+    font-size: 19px;
+  }
+}
+
+/* Medium-large screens - 1200px to 1399px */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .cards {
+    padding: 40px 30px;
+    gap: 20px;
+    max-width: 1800px;
+  }
+  
+  .cardImg {
+    height: 350px;
+  }
+  
+  .cardOverlay {
+    font-size: 26px;
+    padding: 16px 30px;
+    letter-spacing: 2px;
+  }
+  
+  .hero {
+    height: 280px;
+  }
+  
+  .heroLogo {
+    max-height: 150px;
+  }
+  
+  .intro {
+    padding: 22px;
+  }
+  
+  .kicker, .statement {
+    font-size: 18px;
+  }
+}
+
+/* Medium screens - 900px to 1199px */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .cards {
+    padding: 35px 25px;
+    gap: 18px;
+    max-width: calc(100vw - 50px);
+  }
+  
+  .cardImg {
+    height: 300px;
+  }
+  
+  .cardOverlay {
+    font-size: 22px;
+    padding: 14px 25px;
+    letter-spacing: 1.5px;
+  }
+  
+  .hero {
+    height: 240px;
+  }
+  
+  .heroLogo {
+    max-height: 130px;
+  }
+  
+  .intro {
+    padding: 20px;
+  }
+  
+  .kicker, .statement {
+    font-size: 17px;
+  }
+}
+
+/* Small screens - 769px to 899px */
+@media (min-width: 769px) and (max-width: 899px) {
+  .cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    padding: 30px 20px;
+    gap: 15px;
+    max-width: calc(100vw - 40px);
+  }
+  
+  .cardImg {
+    height: 250px;
+  }
+  
+  .cardOverlay {
+    font-size: 20px;
+    padding: 12px 20px;
+    letter-spacing: 1px;
+  }
+  
+  .hero {
+    height: 220px;
+  }
+  
+  .heroLogo {
+    max-height: 120px;
+  }
+  
+  .intro {
+    padding: 18px;
+  }
+  
+  .kicker, .statement {
+    font-size: 16px;
+  }
+}
+
+/* Mobile screens - 481px to 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 25px 15px;
+    gap: 15px;
+    max-width: calc(100vw - 30px);
+  }
+  
+  .cardImg {
+    height: 200px;
+  }
+  
+  .cardOverlay {
+    font-size: 20px;
+    padding: 12px 20px;
+    letter-spacing: 1px;
+  }
+  
+  .hero {
+    height: 200px;
+  }
+  
+  .heroLogo {
+    max-height: 110px;
+  }
+  
+  .intro {
+    padding: 16px;
+  }
+  
+  .kicker, .statement {
+    font-size: 16px;
+  }
+}
+
+/* Small mobile screens - 320px to 480px */
+@media (min-width: 320px) and (max-width: 480px) {
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+    gap: 12px;
+    max-width: calc(100vw - 20px);
+  }
+  
+  .cardImg {
+    height: 180px;
+  }
+  
+  .cardOverlay {
+    font-size: 18px;
+    padding: 10px 15px;
+    letter-spacing: 0.5px;
+  }
+  
+  .hero {
+    height: 180px;
+  }
+  
+  .heroLogo {
+    max-height: 100px;
+  }
+  
+  .intro {
+    padding: 14px;
+  }
+  
+  .kicker, .statement {
+    font-size: 15px;
+  }
+}
+
+/* Extra small screens - below 320px */
+@media (max-width: 319px) {
+  .cards {
+    grid-template-columns: 1fr;
+    padding: 15px 8px;
+    gap: 10px;
+    max-width: calc(100vw - 16px);
+  }
+  
+  .cardImg {
+    height: 150px;
+  }
+  
+  .cardOverlay {
+    font-size: 16px;
+    padding: 8px 12px;
+    letter-spacing: 0.5px;
+  }
+  
+  .hero {
+    height: 160px;
+  }
+  
+  .heroLogo {
+    max-height: 90px;
+  }
+  
+  .intro {
+    padding: 12px;
+  }
+  
+  .kicker, .statement {
+    font-size: 14px;
+  }
+}
