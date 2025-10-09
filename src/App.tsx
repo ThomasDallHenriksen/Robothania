@@ -5,6 +5,7 @@ import Frontpage from './pages/frontpage';
 import Medtech from './pages/medtech';
 import Industrial from './pages/industrial';
 import Defense from './pages/defense';
+import Products from './pages/products';
 import Technologies from './pages/technologies';
 import Industries from './pages/industries';
 import About from './pages/about';
@@ -32,6 +33,7 @@ function App() {
           <Route path="/medtech" element={<Medtech />} />
           <Route path="/industrial" element={<Industrial />} />
           <Route path="/defense" element={<Defense />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/technologies" element={<Technologies />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/about" element={<About />} />
