@@ -19,7 +19,7 @@ const TechnologyGear: React.FC<TechnologyGearProps> = ({
     <div className={`technology-gear-container ${className || ''}`} style={style}>
       <svg 
         version="1.1" 
-        viewBox="-200 0 700 439" 
+        viewBox="-200 0 670 439" 
         xmlns="http://www.w3.org/2000/svg"
         className="technology-gear-svg"
       >

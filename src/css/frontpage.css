@@ -110,7 +110,7 @@
   justify-content: center;
   align-items: center;
   margin: 40px 0;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .world-no1-heading h1 {
@@ -278,7 +278,7 @@
   .application-presentation-container {
     flex-direction: column-reverse;
     gap: 30px;
-    padding: 0 20px;
+    padding: 0 15px;
     margin: 40px 0px;
   }
 
@@ -300,7 +300,7 @@
   .application-presentation-container {
     flex-direction: column-reverse;
     gap: 20px;
-    padding: 0 20px;
+    padding: 0 15px;
     margin: 10px 0px;
   }
 
@@ -374,7 +374,7 @@
   .application-presentation-container {
     flex-direction: column-reverse;
     gap: 20px;
-    padding: 0 20px;
+    padding: 0 15px;
     margin: 10px 0px;
   }
 
@@ -440,7 +440,7 @@
   .application-presentation-container {
     flex-direction: column-reverse;
     gap: 20px;
-    padding: 0 20px;
+    padding: 0 10px;
     margin: 10px 0px;
 
   }
@@ -492,7 +492,7 @@
   .application-presentation-container {
     flex-direction: column-reverse;
     gap: 10px;
-    padding: 0 20px;
+    padding: 0 8px;
     margin: 10px 0px;
 
   }
