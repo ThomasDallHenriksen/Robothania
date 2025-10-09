@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
         {/* Logo on the left */}
         <div className="navbar-logo">
           <Link to="/" className="logo-link">
-            <img src="/Robothania_logo_Green.svg" alt="ROBOTHANIA Logo" className="logo-img" />
+            <img src="/boldGear.svg" alt="ROBOTHANIA Logo" className="logo-img" />
           </Link>
         </div>
         
