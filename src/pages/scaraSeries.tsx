@@ -95,21 +95,21 @@ const ScaraSeries: React.FC = () => {
             id: "manufacturing-co",
             company: "Advanced Manufacturing Co",
             description: "Advanced Manufacturing Co increased their production efficiency by 40% using Scara-series robots for automated assembly and quality inspection processes.",
-            image: "/public/assembly.png",
+            image: "/assembly.png",
             videoLink: "/videos/manufacturing-case"
         },
         {
             id: "tech-startup",
             company: "TechStart Robotics",
             description: "TechStart Robotics leveraged Scara-series for their automated testing facility, reducing testing time by 60% while improving accuracy.",
-            image: "/public/industrial.png",
+            image: "/industrial.png",
             videoLink: "/videos/techstart-case"
         },
         {
             id: "medical-devices",
             company: "MediTech Solutions",
             description: "MediTech Solutions implemented Scara-series robots for precision medical device assembly, achieving 99.9% quality standards.",
-            image: "/public/medtech.png",
+            image: "/medtech.png",
             videoLink: "/videos/meditech-case"
         }
     ];
