@@ -82,7 +82,7 @@
 }
 
 .kicker {
-  color: #71926b;
+  color: #689367;
   font-size: 18px;
   text-align: center;
   margin: 4px 0 12px;
@@ -90,7 +90,7 @@
 
 .statement {
   margin: 0;
-  color: #71926b;
+  color: #689367;
   text-align: center;
   font-size: 18px;
   line-height: 1.6;
@@ -98,7 +98,7 @@
 }
 
 .quoteMark {
-  color: #71926b;
+  color: #689367;
   font-size: 22px;
   vertical-align: baseline;
   padding: 0 6px;
@@ -148,7 +148,7 @@
   align-items: center;
   justify-content: center;
   color: #eaffea;
-  background: linear-gradient(135deg, #5f7b59, #71926b);
+  background: linear-gradient(135deg, #5f7b59, #689367);
   width: 32px;
   height: 32px;
   border-radius: 10px;
@@ -187,7 +187,7 @@
 }
 
 .content h1 {
-  color: #71926b;
+  color: #689367;
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;

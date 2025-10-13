@@ -18,13 +18,13 @@
   cursor: pointer;
   transition: fill 0.3s ease;
   user-select: none;
-  fill: #71926b;
+  fill: #689367;
 }
 
 .technology-gear-svg .node {
   transition: fill 0.3s ease;
   user-select: none;
-  fill: #71926b;
+  fill: #689367;
 }
 
 /* Style pins - keep them static */
