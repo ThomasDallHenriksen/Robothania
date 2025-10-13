@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: flex-start;
     padding: 40px;
+    
   }
   
   .content {
@@ -58,6 +59,19 @@
     color: #666;
     font-size: 16px;
     margin: 0;
+  }
+
+  .testProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
+    border-radius: 10px;
+    border: 2px dashed #71926b;
+    margin-top: 20px;
   }
   
   /* Responsive design */

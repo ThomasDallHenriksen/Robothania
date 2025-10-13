@@ -11,7 +11,7 @@ const About: React.FC = () => {
       <div className={styles.content}>
         <h1>ABOUT</h1>
           <div className={styles.placeholder}>
-            <h2>comming soon...</h2>
+            <h2>coming soon...</h2>
             <p>This page is under construction. Content will be added soon.</p>
           </div>
         </div>

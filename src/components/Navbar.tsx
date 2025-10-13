@@ -6,7 +6,6 @@ const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Logo on the left */}
         <div className="navbar-logo">
           <Link to="/" className="logo-link">
             <img src="/boldGear.svg" alt="ROBOTHANIA Logo" className="logo-img" />
@@ -15,7 +14,7 @@ const Navbar: React.FC = () => {
         
         {/* Navigation items on the right (for future use) */}
         <div className="navbar-menu">
-          <Link to="/products" className="nav-link">Products</Link>
+          <Link to="/scara-series" className="nav-link">Products</Link>
           <Link to="/Technologies" className="nav-link">Technologies</Link>
           <Link to="/industries" className="nav-link">Industries</Link>
           <Link to="/about" className="nav-link">About</Link>
