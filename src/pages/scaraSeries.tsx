@@ -129,7 +129,7 @@ const ScaraSeries: React.FC = () => {
                         footprint: "Ø 200mm",
                         weight: "20kg"
                     },
-                    image: "public/3dRendering.png",
+                    image: "/3dRendering.png",
                     detailsLink: "#!"
                 },
                 {
