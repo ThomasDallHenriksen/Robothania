@@ -165,7 +165,7 @@ const ScaraSeries: React.FC = () => {
             ctaTitle="Get Started"
             ctaDescription="Ready to automate your processes?"
             ctaButtonText="Contact Us"
-            ctaButtonLink="/contact"
+            ctaButtonLink="#!"
         />
     );
 };
