@@ -15,7 +15,6 @@
 
 /* Style individual text elements */
 .technology-gear-svg .label {
-  cursor: pointer;
   transition: fill 0.3s ease;
   user-select: none;
   fill: #689367;
@@ -34,10 +33,6 @@
 
 /* Hover effects - only for nodes and labels */
 .technology-gear-svg g:hover .node {
-  fill: #00ff88;
-}
-
-.technology-gear-svg g:hover .label {
   fill: #00ff88;
 }
 
