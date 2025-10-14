@@ -276,7 +276,7 @@
   }
 
   .application-presentation-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 30px;
     padding: 0 15px;
     margin: 40px 0px;
@@ -298,7 +298,7 @@
   }
 
   .application-presentation-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 20px;
     padding: 0 15px;
     margin: 10px 0px;
@@ -372,7 +372,7 @@
   }
 
   .application-presentation-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 20px;
     padding: 0 15px;
     margin: 10px 0px;
@@ -438,7 +438,7 @@
   }
 
   .application-presentation-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 20px;
     padding: 0 10px;
     margin: 10px 0px;
@@ -490,7 +490,7 @@
   }
 
   .application-presentation-container {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 10px;
     padding: 0 8px;
     margin: 10px 0px;
