@@ -52,7 +52,24 @@
 
 /* Style the main gear */
 .technology-gear-svg #gear {
-  transition: transform 0.3s ease;
+  transition: transform 0.6s ease-in-out;
+  transform-origin: 302px 222.9px;
+}
+
+.technology-gear-svg .gear-rotate {
+  animation: gearRotate 1s ease-in-out;
+}
+
+@keyframes gearRotate {
+  0% {
+    transform: rotate(-90deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 /* Style arrows */

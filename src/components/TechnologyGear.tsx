@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../css/technologyGear.css';
 
 interface TechnologyGearProps {
@@ -12,8 +12,17 @@ const TechnologyGear: React.FC<TechnologyGearProps> = ({
   style, 
   activeNodes = [] 
 }) => {
+
+  const [rotationKey, setRotationKey] = useState(0);
+
   // Helper function to check if a node should be active
   const isNodeActive = (nodeId: string) => activeNodes.includes(nodeId);
+
+  useEffect(() => {
+    if (activeNodes.length > 0) {
+      setRotationKey(prev => prev + 1);
+    }
+  }, [activeNodes]);
 
   return (
     <div className={`technology-gear-container ${className || ''}`} style={style}>
@@ -45,13 +54,7 @@ const TechnologyGear: React.FC<TechnologyGearProps> = ({
         {/* Main circle */}
         <path id="circle" className="green" d="m302.4 278.2c-29.9 0-54.3-24.4-54.3-54.3s24.4-54.3 54.3-54.3 54.3 24.4 54.3 54.3-24.4 54.3-54.3 54.3zm0-102.6c-26.6 0-48.3 21.7-48.3 48.3s21.7 48.3 48.3 48.3 48.3-21.7 48.3-48.3-21.7-48.3-48.3-48.3z"/>
         
-        {/* Arrows */}
-        <g id="arrows" className="green">
-          <path id="arrow-north" className="arrow-north" d="m320.9 107.5h-37l18.5-35.1zm-27-6h17.1l-8.5-16.2-8.5 16.2z"/>
-          <path id="arrow-south" className="arrow-south" d="m302.4 375.4-18.5-35.1h37zm-8.5-29.1 8.5 16.2 8.5-16.2h-17.1z"/>
-          <path id="arrow-west" className="arrow-west" d="m186 242.4-35.1-18.5 35.1-18.5zm-22.2-18.5 16.2 8.5v-17.1l-16.2 8.5z"/>
-          <path id="arrow-east" className="arrow-east" d="m417.43 205.4 35.1 18.5-35.1 18.5zm22.2 18.5-16.2-8.5v17.1l16.2-8.5z" fill="#689367"/>
-        </g>
+        
         
         {/* Left node */}
         <g className={`node-group ${isNodeActive('node4') ? 'active' : ''}`}>
@@ -96,8 +99,17 @@ const TechnologyGear: React.FC<TechnologyGearProps> = ({
           <text id="node2" className="label" x="125" y="59" textAnchor="end">Actuators</text>
         </g>
         
-        {/* Main gear */}
-        <g id="gear">
+        {/* Main gear with arrows inside - now they rotate together */}
+        <g id="gear" key={rotationKey} className="gear-rotate">
+          {/* Arrows moved inside the gear group */}
+          <g id="arrows" className="green">
+            <path id="arrow-north" className="arrow-north" d="m320.9 107.5h-37l18.5-35.1zm-27-6h17.1l-8.5-16.2-8.5 16.2z"/>
+            <path id="arrow-south" className="arrow-south" d="m302.4 375.4-18.5-35.1h37zm-8.5-29.1 8.5 16.2 8.5-16.2h-17.1z"/>
+            <path id="arrow-west" className="arrow-west" d="m186 242.4-35.1-18.5 35.1-18.5zm-22.2-18.5 16.2 8.5v-17.1l-16.2 8.5z"/>
+            <path id="arrow-east" className="arrow-east" d="m417.43 205.4 35.1 18.5-35.1 18.5zm22.2 18.5-16.2-8.5v17.1l16.2-8.5z" fill="#689367"/>
+          </g>
+          
+          {/* Main gear path */}
           <path className="green" d="m336.2 390h-67.5l-7.5-40.9c-6.2-2-12.2-4.5-18-7.5l-34.3 23.6-47.7-47.7 23.6-34.3c-2.9-5.8-5.5-11.9-7.5-18l-40.9-7.5v-67.5l40.9-7.5c2-6.2 4.5-12.2 7.5-18l-23.6-34.3 47.7-47.7 34.3 23.6c5.8-2.9 11.9-5.5 18-7.5l7.5-40.9h67.5l7.5 40.9c6.2 2 12.2 4.5 18 7.5l34.3-23.6 45.9 45.9-4.2 4.2-42.4-42.4-33.1 22.8-1.6-0.8c-6.5-3.4-13.4-6.3-20.4-8.5l-1.7-0.5-7.3-39.6h-57.5l-7.3 39.6-1.7 0.5c-7 2.2-13.9 5-20.4 8.5l-1.6 0.8-33.1-22.8-40.6 40.6 22.8 33.1-0.8 1.6c-3.4 6.5-6.3 13.4-8.5 20.4l-0.5 1.7-39.6 7.3v57.5l39.6 7.3 0.5 1.7c2.2 7 5 13.9 8.5 20.4l0.8 1.6-22.8 33.1 40.6 40.6 33.1-22.8 1.6 0.8c6.5 3.4 13.4 6.3 20.4 8.5l1.7 0.5 7.3 39.6h57.5l7.3-39.6 1.7-0.5c7-2.2 13.9-5 20.4-8.5l1.6-0.8 33.1 22.8 42.4-42.4 4.2 4.2-45.9 45.9-34.3-23.6c-5.8 2.9-11.9 5.5-18 7.5l-7.5 40.9z"/>
           <path className="st1" d="m466.95 189.48v68.63l-40.9 7.6256c-2 6.3038-4.5 12.404-7.5 18.301l23.6 34.874-7.9-0.71173-22.8-33.654 0.8-1.6268c3.4-6.6089 6.3-13.624 8.5-20.742l0.5-1.7285 39.6-7.4222v-58.463l-39.6-7.4223-0.5-1.7285c-2.2-7.1172-5-14.133-8.5-20.742l-0.8-1.6268 22.8-33.654 7.7-0.71172-23.6 34.874c2.9 5.8971 5.5 12.099 7.5 18.301l40.9 7.6256z" fill="#689367" strokeWidth="1.0083"/>
         </g>
