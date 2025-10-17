@@ -173,7 +173,7 @@
 /* Large screens - 1400px to 1919px */
 @media (min-width: 1400px) and (max-width: 1919px) {
   .frontpage-main {
-    padding: 50px 0 0 0;
+    padding: 30px 0 0 0;
   }
 
   .interactive-menu-section {
