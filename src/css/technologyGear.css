@@ -31,10 +31,6 @@
   fill: #689367;
 }
 
-/* Hover effects - only for nodes and labels */
-.technology-gear-svg g:hover .node {
-}
-
 /* Active state (when video is selected) - only nodes and labels */
 .technology-gear-svg .node-group.active .node {
   fill: #00ff88;
