@@ -21,7 +21,6 @@ interface Application {
   icon: string;
 }
 
-// NEW: Interface for industry groups
 interface ApplicationsByIndustry {
   [industry: string]: Application[];
 }
@@ -72,7 +71,6 @@ const ProductTemplate: React.FC<ProductTemplateProps> = ({
   applicationsSubtitle,
   advantagesSubtitle
 }) => {
-  // NEW: Helper function to get industry display name
   const getIndustryDisplayName = (industry: string) => {
     const industryNames: { [key: string]: string } = {
       industrial: "Industrial",

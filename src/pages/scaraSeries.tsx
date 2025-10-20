@@ -6,62 +6,24 @@ const ScaraSeries: React.FC = () => {
     // NEW: Organized applications by industry
     const applicationsByIndustry = {
         industrial: [
-            { id: "welding", name: "Welding", icon: "/icons/welding.svg" },
-            { id: "painting", name: "Painting", icon: "/icons/painting.svg" },
-            { id: "material-handling", name: "Material Handling", icon: "/icons/material-handling.svg" },
-            { id: "assembly", name: "Assembly", icon: "/icons/assembly.svg" },
-            { id: "packaging", name: "Packaging", icon: "/icons/packaging.svg" }
+            { id: "welding", name: "Welding", icon: " /icons/welding.png" },
+            { id: "painting", name: "Painting", icon: "/icons/painting.png" },
+            { id: "material-handling", name: "Material Handling", icon: "/icons/material-handling.png" },
+            { id: "assembly", name: "Assembly", icon: "/icons/assembly.png" },
+            { id: "packaging", name: "Packaging", icon: "/icons/packaging.png" }
         ],
         medical: [
-            { id: "surgical", name: "Surgical", icon: "/icons/surgical.svg" },
-            { id: "rehabilitation", name: "Rehabilitation", icon: "/icons/rehabilitation.svg" },
-            { id: "pharmacy", name: "Pharmacy Automation", icon: "/icons/pharmacy.svg" },
-            { id: "telepresence", name: "Telepresence", icon: "/icons/telepresence.svg" },
-            { id: "disinfection", name: "Disinfection", icon: "/icons/disinfection.svg" }
-        ],
-        service: [
-            { id: "cleaning", name: "Cleaning", icon: "/icons/cleaning.svg" },
-            { id: "delivery", name: "Delivery", icon: "/icons/delivery.svg" },
-            { id: "reception", name: "Reception", icon: "/icons/reception.svg" },
-            { id: "security", name: "Security", icon: "/icons/security.svg" },
-            { id: "hotel-service", name: "Hotel Service", icon: "/icons/hotel-service.svg" }
-        ],
-        agricultural: [
-            { id: "harvesting", name: "Harvesting", icon: "/icons/harvesting.svg" },
-            { id: "weeding", name: "Weeding", icon: "/icons/weeding.svg" },
-            { id: "drone-spraying", name: "Drone Spraying", icon: "/icons/drone-spraying.svg" },
-            { id: "planting", name: "Planting", icon: "/icons/planting.svg" },
-            { id: "livestock-monitoring", name: "Livestock Monitoring", icon: "/icons/livestock.svg" }
-        ],
-        space: [
-            { id: "rover", name: "Rover", icon: "/icons/rover.svg" },
-            { id: "robotic-arm", name: "Robotic Arm", icon: "/icons/robotic-arm.svg" },
-            { id: "space-probe", name: "Space Probe", icon: "/icons/space-probe.svg" },
-            { id: "satellite-servicing", name: "Satellite Servicing", icon: "/icons/satellite.svg" },
-            { id: "autonomous-spacecraft", name: "Autonomous Spacecraft", icon: "/icons/spacecraft.svg" }
-        ],
-        underwater: [
-            { id: "rov", name: "Remotely Operated Vehicle (ROV)", icon: "/icons/rov.svg" },
-            { id: "auv", name: "Autonomous Underwater Vehicle (AUV)", icon: "/icons/auv.svg" },
-            { id: "inspection", name: "Underwater Inspection", icon: "/icons/inspection.svg" },
-            { id: "marine-monitoring", name: "Marine Monitoring", icon: "/icons/marine.svg" }
-        ],
-        education: [
-            { id: "stem-learning", name: "STEM Learning", icon: "/icons/stem.svg" },
-            { id: "ai-research", name: "AI Research", icon: "/icons/ai.svg" },
-            { id: "simulation", name: "Simulation", icon: "/icons/simulation.svg" }
-        ],
-        domestic: [
-            { id: "vacuum", name: "Vacuum", icon: "/icons/vacuum.svg" },
-            { id: "lawn-mowing", name: "Lawn Mowing", icon: "/icons/lawn-mowing.svg" },
-            { id: "cooking", name: "Cooking", icon: "/icons/cooking.svg" },
-            { id: "companion", name: "Companion", icon: "/icons/companion.svg" }
+            { id: "surgical", name: "Surgical", icon: "/icons/surgical.png" },
+            { id: "rehabilitation", name: "Rehabilitation", icon: "/icons/rehabilitation.png" },
+            { id: "pharmacy", name: "Pharmacy Automation", icon: "/icons/pharmacy-automation.png" },
+            { id: "telepresence", name: "Swapping", icon: "/icons/swapping.png" },
+            { id: "disinfection", name: "Disinfection", icon: "/icons/disinfection.png" }
         ],
         defense: [
-            { id: "bomb-disposal", name: "Bomb Disposal", icon: "/icons/bomb-disposal.svg" },
-            { id: "reconnaissance", name: "Reconnaissance", icon: "/icons/reconnaissance.svg" },
-            { id: "ugv", name: "Unmanned Ground Vehicle (UGV)", icon: "/icons/ugv.svg" },
-            { id: "combat-drone", name: "Combat Drone", icon: "/icons/combat-drone.svg" }
+            { id: "bomb-disposal", name: "Bomb Disposal", icon: "/icons/bomb-disposal.png" },
+            { id: "reconnaissance", name: "Reconnaissance", icon: "/icons/reconnaissance.png" },
+            { id: "ugv", name: "Military System", icon: "/icons/military-system.png" },
+            { id: "combat-drone", name: "Checkpoints", icon: "/icons/checkpoint.png" }
         ]
     };
 
