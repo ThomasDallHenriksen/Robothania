@@ -33,7 +33,6 @@
 
 /* Hover effects - only for nodes and labels */
 .technology-gear-svg g:hover .node {
-  fill: #00ff88;
 }
 
 /* Active state (when video is selected) - only nodes and labels */
