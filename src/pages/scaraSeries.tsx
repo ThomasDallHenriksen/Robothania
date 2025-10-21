@@ -6,24 +6,24 @@ const ScaraSeries: React.FC = () => {
     // NEW: Organized applications by industry
     const applicationsByIndustry = {
         industrial: [
-            { id: "welding", name: "Welding", icon: " /icons/welding.png" },
-            { id: "painting", name: "Painting", icon: "/icons/painting.png" },
-            { id: "material-handling", name: "Material Handling", icon: "/icons/material-handling.png" },
-            { id: "assembly", name: "Assembly", icon: "/icons/assembly.png" },
-            { id: "packaging", name: "Packaging", icon: "/icons/packaging.png" }
+            { id: "welding", name: "Welding", icon: " /icons/welding-green.png" },
+            { id: "painting", name: "Painting", icon: "/icons/painting-green.png" },
+            { id: "material-handling", name: "Material Handling", icon: "/icons/material-handling-green.png" },
+            { id: "assembly", name: "Assembly", icon: "/icons/assembly-green.png" },
+            { id: "packaging", name: "Packaging", icon: "/icons/packaging-green.png" }
         ],
         medical: [
-            { id: "surgical", name: "Surgical", icon: "/icons/surgical.png" },
-            { id: "rehabilitation", name: "Rehabilitation", icon: "/icons/rehabilitation.png" },
-            { id: "pharmacy", name: "Pharmacy Automation", icon: "/icons/pharmacy-automation.png" },
-            { id: "telepresence", name: "Swapping", icon: "/icons/swapping.png" },
-            { id: "disinfection", name: "Disinfection", icon: "/icons/disinfection.png" }
+            { id: "surgical", name: "Surgical", icon: "/icons/surgical-green.png" },
+            { id: "rehabilitation", name: "Rehabilitation", icon: "/icons/rehabilitation-green.png" },
+            { id: "pharmacy", name: "Pharmacy Automation", icon: "/icons/pharmacy-automation-green.png" },
+            { id: "telepresence", name: "Swapping", icon: "/icons/swapping-green.png" },
+            { id: "disinfection", name: "Disinfection", icon: "/icons/disinfection-green.png" }
         ],
         defense: [
-            { id: "bomb-disposal", name: "Bomb Disposal", icon: "/icons/bomb-disposal.png" },
-            { id: "reconnaissance", name: "Reconnaissance", icon: "/icons/reconnaissance.png" },
-            { id: "ugv", name: "Military System", icon: "/icons/military-system.png" },
-            { id: "combat-drone", name: "Checkpoints", icon: "/icons/checkpoint.png" }
+            { id: "bomb-disposal", name: "Bomb Disposal", icon: "/icons/bomb-disposal-green.png" },
+            { id: "reconnaissance", name: "Reconnaissance", icon: "/icons/reconnaissance-green.png" },
+            { id: "ugv", name: "Military System", icon: "/icons/military-system-green.png" },
+            { id: "combat-drone", name: "Checkpoints", icon: "/icons/checkpoint-green.png" }
         ]
     };
 
