@@ -1,6 +1,6 @@
 .page {
   min-height: 100vh;
-  background: rgba(8, 8, 8);
+  background: #080808;
   display: flex;
   flex-direction: column;
   font-family: 'Arial', sans-serif;
@@ -64,7 +64,7 @@
   display: flex;
   justify-content: center;
   padding: 24px 16px;
-  background: rgba(14, 23, 17, 0.8);
+  background: #080808;
   border-top: 1px solid rgba(113,146,107,0.25);
   border-bottom: 1px solid rgba(113,146,107,0.25);
 }
@@ -118,7 +118,7 @@
 .benefit {
   display: flex;
   flex-direction: column;
-  background: rgba(12, 18, 14, 0.6);
+  background: #0e1611;
   border: none;
   border-radius: 16px;
   box-shadow: 0 10px 24px rgba(0,0,0,0.22);
@@ -148,7 +148,7 @@
   align-items: center;
   justify-content: center;
   color: #eaffea;
-  background: linear-gradient(135deg, #5f7b59, #689367);
+  background: #689367;
   width: 32px;
   height: 32px;
   border-radius: 10px;

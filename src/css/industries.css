@@ -1,6 +1,6 @@
 .page {
   height: 100%;
-  background: rgba(8, 8, 8);
+  background: #080808;
   display: flex;
   flex-direction: column;
   font-family: 'Arial', sans-serif;
@@ -31,7 +31,7 @@
 .introWrapper {
   display: flex;
   justify-content: center;
-  background: linear-gradient(0deg, #0b0b0b 0%, #0f1a12 100%);
+  background: #080808;
 
   padding: 24px 16px;
   border-bottom: 1px solid rgba(113,146,107,0.25);
@@ -40,7 +40,7 @@
 .intro {
   width: 100%;
   max-width: 1180px;
-  background: rgba(58, 82, 66, 0.1);
+  background: #0e1611;
   color: #bfe0b9;
   padding: 20px;
   border-radius: 10px;
@@ -88,7 +88,7 @@
   border-radius: 15px;
   overflow: hidden;
   background: #0e1611;
-  border: 1px solid rgba(113,146,107,0.35);
+  border: 1px solid rgba(113,146,107,0.3);
   text-decoration: none;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -144,7 +144,7 @@
 
 .sectionBanner {
   position: relative;
-  border: 1px solid rgba(113,146,107,0.35);
+  border: 1px solid rgba(113,146,107,0.3);
   border-radius: 14px;
   overflow: hidden;
   background: #0e1611;

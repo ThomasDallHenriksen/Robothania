@@ -1,7 +1,7 @@
 /* Page Layout */
 .page {
     min-height: 100vh;
-    background: rgba(8, 8, 8); 
+    background: #080808; 
     font-family: 'Arial', sans-serif;
     width: 100%;
     max-width: none;
@@ -338,10 +338,12 @@
   /* Call to Action Section */
   .cta {
     padding: 40px 0;
-    background: linear-gradient(135deg, #0b0b0b 0%, #0f1a12 100%); 
+    background: #0e1611; 
     color: #e6ffe6; 
     text-align: center;
     border-top: 1px solid rgba(113, 146, 107, 0.3); 
+    border-bottom: 1px solid rgba(113, 146, 107, 0.3); 
+
   }
   
   .ctaContainer {

@@ -1,6 +1,6 @@
 .page {
     min-height: 100vh;
-    background: rgba(8, 8, 8);
+    background: #080808;
     display: flex;
     flex-direction: column;
     font-family: 'Arial', sans-serif;
