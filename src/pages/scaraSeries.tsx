@@ -15,15 +15,15 @@ const ScaraSeries: React.FC = () => {
         medical: [
             { id: "surgical", name: "Surgical", icon: "/icons/surgical-green.png" },
             { id: "rehabilitation", name: "Rehabilitation", icon: "/icons/rehabilitation-green.png" },
-            { id: "pharmacy", name: "Pharmacy Automation", icon: "/icons/pharmacy-automation-green.png" },
-            { id: "telepresence", name: "Swapping", icon: "/icons/swapping-green.png" },
+            { id: "pharmacy-automation", name: "Pharmacy Automation", icon: "/icons/pharmacy-automation-green.png" },
+            { id: "swapping", name: "Swapping", icon: "/icons/swapping-green.png" },
             { id: "disinfection", name: "Disinfection", icon: "/icons/disinfection-green.png" }
         ],
         defense: [
             { id: "bomb-disposal", name: "Bomb Disposal", icon: "/icons/bomb-disposal-green.png" },
             { id: "reconnaissance", name: "Reconnaissance", icon: "/icons/reconnaissance-green.png" },
-            { id: "ugv", name: "Military System", icon: "/icons/military-system-green.png" },
-            { id: "combat-drone", name: "Checkpoints", icon: "/icons/checkpoint-green.png" }
+            { id: "military-system", name: "Military System", icon: "/icons/military-system-green.png" },
+            { id: "checkpoint", name: "Checkpoints", icon: "/icons/checkpoint-green.png" }
         ]
     };
 
