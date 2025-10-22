@@ -25,7 +25,7 @@
 .heroLogo {
   max-height: 140px;
   opacity: 0.9;
-  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.6));
+  filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.6));
 }
 
 .introWrapper {
@@ -34,7 +34,7 @@
   background: #080808;
 
   padding: 24px 16px;
-  border-bottom: 1px solid rgba(113,146,107,0.25);
+  border-bottom: 1px solid rgba(113, 146, 107, 0.25);
 }
 
 .intro {
@@ -87,7 +87,7 @@
   border-radius: 15px;
   overflow: hidden;
   background: #0e1611;
-  border: 1px solid rgba(113,146,107,0.3);
+  border: 1px solid rgba(113, 146, 107, 0.3);
   text-decoration: none;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -127,7 +127,7 @@
 
 .sectionBanner {
   position: relative;
-  border: 1px solid rgba(113,146,107,0.3);
+  border: 1px solid rgba(113, 146, 107, 0.3);
   border-radius: 14px;
   overflow: hidden;
   background: #0e1611;
@@ -149,7 +149,7 @@
   margin: 0;
   color: #ffffff;
   letter-spacing: 6px;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
   padding: 10px 24px;
   border-radius: 10px;
   font-weight: 900;
@@ -164,9 +164,9 @@
 
 .benefit {
   background: #0c120e;
-  border: 1px solid rgba(113,146,107,0.3);
+  border: 1px solid rgba(113, 146, 107, 0.3);
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
   padding: 18px;
 }
 
@@ -183,7 +183,7 @@
 .benefitText {
   color: #d7e6d3;
   background: #0f1712;
-  border: 1px solid rgba(113,146,107,0.25);
+  border: 1px solid rgba(113, 146, 107, 0.25);
   border-radius: 8px;
   padding: 14px;
   min-height: 84px;
@@ -215,25 +215,26 @@
     gap: 30px;
     max-width: 1800px;
   }
-  
+
   .cardImg {
     height: 450px;
   }
-  
-  
+
+
   .hero {
     height: 320px;
   }
-  
+
   .heroLogo {
     max-height: 180px;
   }
-  
+
   .intro {
     padding: 30px;
   }
-  
-  .kicker, .statement {
+
+  .kicker,
+  .statement {
     font-size: 20px;
   }
 }
@@ -245,24 +246,25 @@
     gap: 25px;
     max-width: 1800px;
   }
-  
+
   .cardImg {
     height: 400px;
   }
-  
+
   .hero {
     height: 300px;
   }
-  
+
   .heroLogo {
     max-height: 160px;
   }
-  
+
   .intro {
     padding: 25px;
   }
-  
-  .kicker, .statement {
+
+  .kicker,
+  .statement {
     font-size: 19px;
   }
 }
@@ -274,24 +276,25 @@
     gap: 20px;
     max-width: 1800px;
   }
-  
+
   .cardImg {
     height: 350px;
   }
-  
+
   .hero {
     height: 280px;
   }
-  
+
   .heroLogo {
     max-height: 150px;
   }
-  
+
   .intro {
     padding: 22px;
   }
-  
-  .kicker, .statement {
+
+  .kicker,
+  .statement {
     font-size: 18px;
   }
 }
@@ -303,24 +306,25 @@
     gap: 18px;
     max-width: calc(100vw - 50px);
   }
-  
+
   .cardImg {
     height: 300px;
   }
-  
+
   .hero {
     height: 240px;
   }
-  
+
   .heroLogo {
     max-height: 130px;
   }
-  
+
   .intro {
     padding: 20px;
   }
-  
-  .kicker, .statement {
+
+  .kicker,
+  .statement {
     font-size: 17px;
   }
 }
@@ -333,24 +337,25 @@
     gap: 15px;
     max-width: calc(100vw - 40px);
   }
-  
+
   .cardImg {
     height: 250px;
   }
-  
+
   .hero {
     height: 220px;
   }
-  
+
   .heroLogo {
     max-height: 120px;
   }
-  
+
   .intro {
     padding: 18px;
   }
-  
-  .kicker, .statement {
+
+  .kicker,
+  .statement {
     font-size: 16px;
   }
 }
@@ -363,24 +368,25 @@
     gap: 15px;
     max-width: calc(100vw - 30px);
   }
-  
+
   .cardImg {
     height: 200px;
   }
-  
+
   .hero {
     height: 200px;
   }
-  
+
   .heroLogo {
     max-height: 110px;
   }
-  
+
   .intro {
     padding: 16px;
   }
-  
-  .kicker, .statement {
+
+  .kicker,
+  .statement {
     font-size: 16px;
   }
 }
@@ -393,24 +399,25 @@
     gap: 12px;
     max-width: calc(100vw - 20px);
   }
-  
+
   .cardImg {
     height: 180px;
   }
-  
+
   .hero {
     height: 180px;
   }
-  
+
   .heroLogo {
     max-height: 100px;
   }
-  
+
   .intro {
     padding: 14px;
   }
-  
-  .kicker, .statement {
+
+  .kicker,
+  .statement {
     font-size: 15px;
   }
 }
@@ -423,24 +430,25 @@
     gap: 10px;
     max-width: calc(100vw - 16px);
   }
-  
+
   .cardImg {
     height: 150px;
   }
-  
+
   .hero {
     height: 160px;
   }
-  
+
   .heroLogo {
     max-height: 90px;
   }
-  
+
   .intro {
     padding: 12px;
   }
-  
-  .kicker, .statement {
+
+  .kicker,
+  .statement {
     font-size: 14px;
   }
 }
