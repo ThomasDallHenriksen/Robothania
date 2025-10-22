@@ -16,7 +16,7 @@
 .sectionBanner {
   position: relative;
   border-bottom: 1px solid rgba(113,146,107,0.3);
-  background: linear-gradient(180deg, #0b0b0b 0%, #0e1510 100%);
+  background: linear-gradient(180deg, #0e1611 0%, #0e1510 100%);
 }
 .bannerParallax {
   width: 100%;
@@ -71,7 +71,6 @@
   width: 100%;
   max-width: 1180px;
   background: #0c120e;
-  color: #bfe0b9;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.3) inset, 0 0 1px rgba(255,255,255,0.05);

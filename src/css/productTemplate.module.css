@@ -15,7 +15,6 @@
   /* Hero Section */
   .hero {
     background: linear-gradient(180deg, #0b0b0b 0%, #0f1a12 100%); 
-    color: #e6ffe6;
     padding: 80px 0;
     text-align: center;
     border-bottom: 1px solid rgba(113, 146, 107, 0.3); 
@@ -339,7 +338,6 @@
   .cta {
     padding: 40px 0;
     background: #0e1611; 
-    color: #e6ffe6; 
     text-align: center;
     border-top: 1px solid rgba(113, 146, 107, 0.3); 
     border-bottom: 1px solid rgba(113, 146, 107, 0.3); 

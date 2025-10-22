@@ -22,7 +22,6 @@
   }
   
   .fp-tagline-sub {
-    color: #bfe0b9;
     font-size: 14px;
   }
   
@@ -36,7 +35,7 @@
   
   .fp-quote-strong {
     font-weight: 800;
-    color: #0b0b0b;
+    color: #0e1611;
     font-size: 18px;
     margin: 0 0 4px;
   }
@@ -111,7 +110,7 @@
   .fp-video-cta {
     font-size: 20px;
     font-weight: 700;
-    background: linear-gradient(135deg, #0b0b0b 0%, #2e2e2e 100%);
+    background: linear-gradient(135deg, #0e1611 0%, #2e2e2e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -124,7 +123,7 @@
   .fp-benefit-text {
     margin-top: 6px;
     background: #ffffff;
-    color: #0b0b0b;
+    color: #0e1611;
     border-radius: 6px;
     padding: 12px 14px;
     border: 1px solid #e0e0e0;
