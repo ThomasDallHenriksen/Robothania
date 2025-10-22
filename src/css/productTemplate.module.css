@@ -298,13 +298,13 @@
   }
   
   .caseStudyImage {
-    height: 200px;
+    height: 225px;
     overflow: hidden;
   }
   
   .caseStudyImage img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     filter: saturate(0.85) brightness(0.9) contrast(1.05); 
   }
@@ -429,5 +429,11 @@
     
     .industryTitle {
       font-size: 1.25rem;
+    }
+  }
+
+  @media(min-width: 500px) and (max-width: 768px) {
+    .caseStudyImage {
+      height: 350px;
     }
   }
