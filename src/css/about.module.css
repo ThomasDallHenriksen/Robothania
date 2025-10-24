@@ -1,79 +1,231 @@
 .page {
-    min-height: 100vh;
-    background: #080808;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  background: #080808;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(180deg, #0e1611 0%, #0f1a12 100%);
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(113, 146, 107, 0.3);
+}
+
+.heroContent {
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: #689367;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Team Section */
+.teamSection {
+  padding: 80px 0;
+  background: #080808;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sectionDescription {
+  font-size: 1.1rem;
+  color: #689367;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.employeeCard {
+  background: #0e1611;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid rgba(113, 146, 107, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.employeeCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+  border-color: rgba(113, 146, 107, 0.4);
+}
+
+.portraitContainer {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.portrait {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #689367;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.employeeInfo {
+  text-align: center;
+}
+
+.employeeName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.employeeRole {
+  font-size: 1rem;
+  color: #689367;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.employeeDescription {
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.6;
+  text-align: left;
+}
+
+/* Values Section */
+.valuesSection {
+  padding: 80px 0;
+  background: #0a0a0a;
+  border-top: 1px solid rgba(113, 146, 107, 0.2);
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.valueCard {
+  background: #0e1611;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid rgba(113, 146, 107, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.valueCard:hover {
+  transform: translateY(-3px);
+  border-color: rgba(113, 146, 107, 0.3);
+}
+
+.valueTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #689367;
+  margin-bottom: 15px;
+}
+
+.valueDescription {
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.5rem;
   }
   
-  .main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 40px;
+  .heroSubtitle {
+    font-size: 1.1rem;
   }
   
-  .content {
-    max-width: 800px;
-    width: 100%;
-    background: white;
-    padding: 40px;
-    border-radius: 15px;
+  .teamGrid {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
   
-  .content h1 {
-    color: #689367;
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    letter-spacing: 3px;
+  .employeeCard {
+    padding: 25px;
   }
   
-  .content p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 30px;
-    text-align: center;
+  .portrait {
+    width: 120px;
+    height: 120px;
   }
   
-  .placeholder {
-    text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #f8f8f8 0%, #f0f0f0 100%);
-    border-radius: 10px;
-    border: 2px dashed #689367;
+  .sectionTitle {
+    font-size: 2rem;
   }
   
-  .placeholder h2 {
-    color: #689367;
-    font-size: 24px;
-    margin-bottom: 15px;
+  .valuesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 60px 0;
   }
   
-  .placeholder p {
-    color: #666;
-    font-size: 16px;
-    margin: 0;
+  .heroTitle {
+    font-size: 2rem;
   }
   
-  /* Responsive design */
-  @media (max-width: 768px) {
-    .main {
-      padding: 20px;
-    }
-    
-    .content {
-      padding: 20px;
-    }
-    
-    .content h1 {
-      font-size: 32px;
-    }
-    
-    .content p {
-      font-size: 16px;
-    }
+  .teamSection,
+  .valuesSection {
+    padding: 60px 0;
   }
+  
+  .employeeCard {
+    padding: 20px;
+  }
+}
