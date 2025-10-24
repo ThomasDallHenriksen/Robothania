@@ -21,11 +21,6 @@ const About: React.FC = () => {
         {/* Team Section */}
         <section className={styles.teamSection}>
           <div className={styles.container}>
-            <h2 className={styles.sectionTitle}>Our Team</h2>
-            <p className={styles.sectionDescription}>
-              We are passionate engineers and innovators dedicated to revolutionizing
-              automation across industries.
-            </p>
 
             <div className={styles.teamGrid}>
               {/* Employee 1 */}
@@ -127,7 +122,7 @@ const About: React.FC = () => {
                   <h3 className={styles.employeeName}>Victor</h3>
                   <p className={styles.employeeRole}>Programmer</p>
                   <p className={styles.employeeComingSoon}>
-                    Comming soon
+                    Coming soon
                   </p>
                 </div>
               </div>
@@ -145,7 +140,7 @@ const About: React.FC = () => {
                   <h3 className={styles.employeeName}>Rasha</h3>
                   <p className={styles.employeeRole}>Project Coordinator</p>
                   <p className={styles.employeeComingSoon}>
-                    comming soon
+                    coming soon
                   </p>
                 </div>
               </div>
