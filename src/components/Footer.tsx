@@ -9,11 +9,11 @@ const Footer: React.FC = () => {
           <h3>Information</h3>
           <div className="contact-info">
             <p>Robothania A/S<br />
-            CVR: 44 81 18 47<br />
-            <p><strong>Adresse:</strong></p>
-            Landbrugsvej 6<br />
-            5260 Hjallese<br />
-            Danmark</p>
+              CVR: 44 81 18 47<br />
+              <p><strong>Adresse:</strong></p>
+              Landbrugsvej 6<br />
+              5260 Hjallese<br />
+              Danmark</p>
           </div>
         </div>
 
@@ -29,6 +29,18 @@ const Footer: React.FC = () => {
           <h3>Legal</h3>
           <div className="legal-links">
             <a href="/privacy-policy" className="footer-link">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div className="footer-section">
+          <h3>Links</h3>
+          <div className="links">
+            <a href="https://www.linkedin.com/company/robothania-a-s/" target="_blank" rel="noopener noreferrer" className="social-link">
+              <img src="/icons/linkedin.png" alt="LinkedIn" className="social-icon" />
+            </a>
+            <a href="https://www.youtube.com/@Robothania" target="_blank" rel="noopener noreferrer" className="social-link">
+              <img src="/icons/youtube.png" alt="YouTube" className="social-icon" />
+            </a>
           </div>
         </div>
       </div>
