@@ -39,11 +39,10 @@ const About: React.FC = () => {
                 </div>
                 <div className={styles.employeeInfo}>
                   <h3 className={styles.employeeName}>Esben</h3>
-                  <p className={styles.employeeRole}>Lead Engineer</p>
+                  <p className={styles.employeeRole}>CEO</p>
                   <p className={styles.employeeDescription}>
-                    Esben brings over 10 years of experience in robotics and automation.
-                    His expertise in mechanical design and system integration has been
-                    instrumental in developing our cutting-edge robotic solutions.
+                  I have spent my life building robots – from my first LEGO robot at age four, to co-founding Universal Robots, where we pioneered collaborative robotics and helped shape a new era of human–machine cooperation. With UR, we proved that robots don’t have to be big, fenced-off machines – they can be safe, flexible tools that empower people and create value across industries. Now, with REInvest Robotics, I am beginning my next chapter. My focus is to take everything I’ve learned – from AI research, self-organizing machines, and industrial robotics – and invest it into building the future of robotics: sustainable, useful, and truly collaborative. My mission is simple: to design and create robotic solutions that not only work alongside people, but elevate what they can achieve.
+
                   </p>
                 </div>
               </div>
@@ -59,7 +58,7 @@ const About: React.FC = () => {
                 </div>
                 <div className={styles.employeeInfo}>
                   <h3 className={styles.employeeName}>Søren</h3>
-                  <p className={styles.employeeRole}>Technical Director</p>
+                  <p className={styles.employeeRole}>CEO</p>
                   <p className={styles.employeeDescription}>
                     Søren leads our technical vision with a focus on innovation and
                     quality. His background in advanced manufacturing and robotics
@@ -128,7 +127,7 @@ const About: React.FC = () => {
                   <h3 className={styles.employeeName}>Victor</h3>
                   <p className={styles.employeeRole}>Programmer</p>
                   <p className={styles.employeeComingSoon}>
-                   Comming soon
+                    Comming soon
                   </p>
                 </div>
               </div>
@@ -146,7 +145,7 @@ const About: React.FC = () => {
                   <h3 className={styles.employeeName}>Rasha</h3>
                   <p className={styles.employeeRole}>Project Coordinator</p>
                   <p className={styles.employeeComingSoon}>
-                   comming soon
+                    comming soon
                   </p>
                 </div>
               </div>
