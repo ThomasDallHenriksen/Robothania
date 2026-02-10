@@ -4,7 +4,7 @@
 
 Robothania er en moderne, responsiv webside for et robotik-designhus. Sitet præsenterer virksomhedens kompetencer på tværs af tre brancher: **Medtech**, **Industri** og **Defense**. Applikationen er en Single-Page Application (SPA) bygget med React + TypeScript + Vite og indeholder interaktive video-carouseller, animerede komponenter og branchespecifikke landingssider.
 <img width="2879" height="1799" alt="image" src="https://github.com/user-attachments/assets/54850e14-4dd7-4a32-a351-c10247e49605" />
-<img width="2879" height="1799" alt="image" src="https://github.com/user-attachments/assets/96c6aaaf-9c12-4116-ae93-58aa3de8fd77" />
+<img width="2878" height="1799" alt="image" src="https://github.com/user-attachments/assets/d768cdb9-7674-4913-82b0-c02c679b4658" />
 
 
 
