@@ -91,7 +91,7 @@ const ScaraSeries: React.FC = () => {
                         footprint: "Ø 200mm",
                         weight: "20kg"
                     },
-                    image: "/3dRendering.png",
+                    image: "Robothania_logo_Green.svg",
                     detailsLink: "#!"
                 },
                 {
