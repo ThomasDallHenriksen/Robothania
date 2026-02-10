@@ -1,34 +1,29 @@
 # Robothania Website
 
-## Deploy (GitHub Actions, self-hosted runner på Raspberry Pi)
+Robothania er en moderne, responsiv webside for et robotik-designhus. Sitet præsenterer virksomhedens kompetencer på tværs af tre brancher: **Medtech**, **Industri** og **Defense**. Applikationen er en Single-Page Application (SPA) bygget med React + TypeScript + Vite og indeholder interaktive video-carouseller, animerede komponenter og branchespecifikke landingssider.
 
-[![Deploy to Raspberry Pi (Self-Hosted)](https://github.com/Robothania/robothaniaReactWebsite/actions/workflows/deploy-selfhosted.yml/badge.svg)](https://github.com/Robothania/robothaniaReactWebsite/actions/workflows/deploy-selfhosted.yml)
 
-- **Trigger:** Kører automatisk ved push til `master`/`main` og kan også startes manuelt via **Actions → Run workflow**.
-- **Runner:** Jobbet kører på vores **self-hosted** GitHub Actions runner på Raspberry Pi (`self-hosted`, `Linux`, `ARM64`).
-- **Hvad der sker:**
-  - Tjekker koden ud.
-  - *(Vælg én variant – afhængigt af repoet):*  
-    - **Statisk HTML/CSS:** Kopierer filerne fra repoet til Nginx-mappen med `rsync` (ekskl. `.git`, `.github`, `README*`).  
-    - **Build-projekt (fx Vite/React):** `npm ci && npm run build`, derefter `rsync` af `dist/` til Nginx-mappen.
-  - Ingen SSH, ingen åbne porte – runneren skriver **lokalt** til serverens filsystem.
-- **Destination:** `/var/www/mysite/` (den mappe Nginx server filer fra).
-- **Resultat:** Når workflowet er grønt, er websitet opdateret.
+Company/portfolio website for Robothania — React + TypeScript + Vite.
 
-**Raspberry Pi Fejlfinding (kort)**  
-- Runner: `cd ~/actions-runner && sudo ./svc.sh status`  
-- Nginx: `sudo nginx -t && sudo systemctl reload nginx`  
-- Rettigheder: `sudo chown -R reinvestrobohouse:reinvestrobohouse /var/www/mysite`
+## Tech stack
 
-## Opsætning af Raspberry Pi med Nginx + Github Action
-For opsætning se "Raspberry Pi med Nginx + Github Action" på google drev https://drive.google.com/drive/folders/1r_Ejn01_shNvAayxbvO8eUwUi8NxlYh1
+- **React 19** + **TypeScript**
+- **Vite 7**
+- **React Router**
+- **Tailwind CSS**
 
-## React + TypeScript + Vite
+## Prerequisites
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Node.js 18+ (or 20+)
 
-Currently, two official plugins are available:
+## Getting started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository:
+    git clone https://github.com/YOUR_USERNAME/robothania.git
+    cd robothania
 
+2. Install dependencies and run the dev server:
+    npm install
+    npm run dev
+    
+3. Open http://localhost:5173 in your browser.
